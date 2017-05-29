@@ -1,0 +1,100 @@
+.figure{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.myshadow{
+	box-shadow: 2px 2px 5px grey;
+}
+.img-reponsive{
+	margin-bottom: 5px;
+}
+.numberCircle {
+	border-radius: 50%;
+	width: 35px; 
+	height: 35px;
+	font-size: 30px;
+	border: 3px solid black;
+	float: left;
+	margin-right: 10px;
+	margin-top: 4px;
+	background-color: black;
+	color: white;
+}
+.numberCircle span {
+	text-align: center;
+	line-height: 29px;
+	display: block;
+}
+.pop {
+	cursor: zoom-in;
+}
+.modal-dialog {
+	  position: relative;
+	  width: auto;
+	  max-width: 80%;
+	  margin-left: auto;
+	  margin-right: auto;
+	  margin-top: 1%;
+}
+
+.panel > div:hover{
+	margin-top: -2px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+	background: rgba(200, 200, 200, 0.1);
+	transition: 0.5s;
+}
+
+.row a {
+	text-decoration: none;
+	color: inherit;
+}
+.row a:hover{
+	color: inherit !important;
+}
+a:hover{
+	color: #1abc9c !important;
+}
+.navbar  {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+	letter-spacing: 5px;
+	display: inline-block;
+	float: right;
+	vertical-align: top;
+}
+.navbar-nav  li a:hover {
+	color: #1abc9c !important;
+	margin-top: -10px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+	background: rgba(200, 200, 200, 0.1);
+	transition: 0.5s;
+}
+
+.navbar-nav {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+@media (max-width:768px)
+{
+	#md-float-fix{ 
+		float: none !important;
+	}
+	#md-text-align-center{ 
+		text-align: center;
+	}
+}
+
+}
+@media (min-width:768px)
+{
+	#md-float-fix{ 
+		float: right !important;
+	}
+}

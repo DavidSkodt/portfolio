@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	  <meta charset="UTF-8">
-	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	  <link rel="stylesheet" href="css/bootstrap.css">
-	  <title>Bootstrap</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery-3.2.1.slim.min.js"></script>
+		<title>Bootstrap</title>
+		<style>
+			.panel > div:hover{
+				margin-top: -2px;
+				box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+				background: rgba(200, 200, 200, 0.1);
+				transition: 0.5s;
+			}
+		
+			.row a {
+				text-decoration: none;
+				color: inherit;
+			}
+			.row a:hover{
+				color: inherit !important;
+			}
+			a:hover{
+				color: #1abc9c !important;
+			}
+			.navbar  {
+				padding-top: 15px;
+				padding-bottom: 15px;
+				border: 0;
+				border-radius: 0;
+				margin-bottom: 0;
+				font-size: 14px;
+				letter-spacing: 5px;
+				display: inline-block;
+				float: right;
+				vertical-align: top;
+			}
+			.navbar-nav  li a:hover {
+				color: #1abc9c !important;
+				margin-top: -10px;
+				box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+				background: rgba(200, 200, 200, 0.1);
+				transition: 0.5s;
+			}
+
+			.navbar-nav {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+
+			@media (max-width:768px)
+			{
+				#md-float-fix{ 
+					float: none !important;
+				}
+				#md-text-align-center{ 
+					text-align: center;
+				}
+			}
+
+			}
+			@media (min-width:768px)
+			{
+				#md-float-fix{ 
+					float: right !important;
+				}
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -40,82 +104,64 @@
 				<p style="margin-bottom: 20px">My focus on UX, specifically interaction design, has been kindled three months ago. Some of these projects showcase what I did earlier, but will soon hold a much more recent, where I apply my newly acquired knowledge and skill. My philosophy is aligned with usability legend Steve Krug's mantra: <strong>"Don't make me think."</strong></p>
 
 				<div class="row">
-					<div class="col-lg-4 col-md-6 text-center panel panel-default" style="background-color: white">
-						<div class="panel-body">
-							<h3>VOLUME <small>2015</small>
-							<p><small>Gamification | Redesign | Website</small><p>
-							<img src="images/LocalHeroes.fw.png" class="img-thumbnail" alt="Cinque Terre">
-							<p class="text-left" style="font-size: 14px">During my 9th. semester at Aalborg University, I interned at VOLUME, a Copenhagen-based company that pairs big headlining artists with local artists through fan voting.
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 text-center panel panel-default" style="background-color: white">
-						<div class="panel-body">
-							<h3>VOLUME <small>2015</small>
-							<p><small>Gamification | Redesign | Website</small><p>
-							<img src="images/LocalHeroes.fw.png" class="img-thumbnail" alt="Cinque Terre">
-							<p class="text-left" style="font-size: 14px">During my 9th. semester at Aalborg University, I interned at VOLUME, a Copenhagen-based company that pairs big headlining artists with local artists through fan voting.
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 text-center panel panel-default" style="background-color: white">
-						<div class="panel-body">
-							<h3>VOLUME <small>2015</small>
-							<p><small>Gamification | Redesign | Website</small><p>
-							<img src="images/LocalHeroes.fw.png" class="img-thumbnail" alt="Cinque Terre">
-							<p class="text-left" style="font-size: 14px">During my 9th. semester at Aalborg University, I interned at VOLUME, a Copenhagen-based company that pairs big headlining artists with local artists through fan voting.
-						</div>
+					
+					<div class="col-lg-4 col-md-6">
+						<a href="#">
+							<div class="panel panel-default text-center">
+								<div>
+									<div class="panel-heading panel-default">
+										<h3>VOLUME <small>2015</small>
+										<p><small>Gamification | Redesign | Website</small><p>
+									</div>
+									<div class="panel-body">
+										<img src="images/LocalHeroes.fw.png" class="img-responsive" alt="Cinque Terre">
+										<p class="text-center" style="font-size: 14px; margin-top: 20px">During my 9th. semester at Aalborg University, I interned at VOLUME, a Copenhagen-based company that pairs big headlining artists with local artists through fan voting.
+									</div>
+								</div>
+							</div>
+						</a>
 					</div>
 					
-				</div>
-			</section>
+					<div class="col-lg-4 col-md-6">
+						<a href="#">
+							<div class="panel panel-default text-center">
+								<div>
+									<div class="panel-heading panel-default">
+										<h3>VOLUME <small>2015</small>
+										<p><small>Gamification | Redesign | Website</small><p>
+									</div>
+									<div class="panel-body">
+										<img src="images/LocalHeroes.fw.png" class="img-thumbnail" alt="Cinque Terre">
+										<p class="text-left" style="font-size: 14px">During my 9th. semester at Aalborg University, I interned at VOLUME, a Copenhagen-based company that pairs big headlining artists with local artists through fan voting.
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						<a href="#">
+							<div class="panel panel-default text-center">
+								<div>
+									<div class="panel-heading panel-default">
+										<h3>VOLUME <small>2015</small>
+										<p><small>Gamification | Redesign | Website</small><p>
+									</div>
+									<div class="panel-body">
+										<img src="images/LocalHeroes.fw.png" class="img-thumbnail" alt="Cinque Terre">
+										<p class="text-left" style="font-size: 14px">During my 9th. semester at Aalborg University, I interned at VOLUME, a Copenhagen-based company that pairs big headlining artists with local artists through fan voting.
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+				</div><!-- row -->
+			</section><!-- content section -->
 		</div><!-- container -->
 
-		<script src="js/jquery-3.2.1.slim.min.js"></script>
 		<script src="js/tether.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/scripts.js"></script>
-		
-		<style>
-			.navbar  {
-				padding-top: 15px;
-				padding-bottom: 15px;
-				border: 0;
-				border-radius: 0;
-				margin-bottom: 0;
-				font-size: 14px;
-				letter-spacing: 5px;
-				display: inline-block;
-				float: right;
-				vertical-align: top;
-			}
-			.navbar-nav  li a:hover {
-				color: #1abc9c !important;
-			}
-
-			.navbar-nav {
-				display: flex;
-				justify-content: center;
-				flex-wrap: wrap;
-			}
-
-
-			@media (max-width:768px)
-			{
-				#md-float-fix{ 
-					float: none !important;
-				}
-				#md-text-align-center{ 
-					text-align: center;
-				}
-			}
-
-			}
-			@media (min-width:768px)
-			{
-				#md-float-fix{ 
-					float: right !important;
-				}
-			}
-			
-	  </style>
 	</body>
 </html>
