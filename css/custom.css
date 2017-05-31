@@ -1,6 +1,22 @@
-.figure{
-	margin-top: 10px;
-	margin-bottom: 10px;
+.container {
+	max-width: 1170px;
+	padding-left: 15px !important;
+	padding right: 15px !important;
+	} 
+
+figcaption{
+	margin-bottom: 15px;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+.indent{
+	margin-left: 20px;
 }
 .myshadow{
 	box-shadow: 2px 2px 5px grey;
@@ -27,6 +43,8 @@
 }
 .pop {
 	cursor: zoom-in;
+	margin-top: 10px;
+	margin-bottom: 15px;
 }
 .modal-dialog {
 	  position: relative;
@@ -37,7 +55,7 @@
 	  margin-top: 1%;
 }
 
-.panel > div:hover{
+.panel-hover > div:hover{
 	margin-top: -2px;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
 	background: rgba(200, 200, 200, 0.1);
@@ -52,22 +70,19 @@
 	color: inherit !important;
 }
 a:hover{
-	color: #1abc9c !important;
+	color: #0082AA !important;
 }
 .navbar  {
-	padding-top: 15px;
-	padding-bottom: 15px;
 	border: 0;
 	border-radius: 0;
-	margin-bottom: 0;
-	font-size: 14px;
+	font-size: 17px;
 	letter-spacing: 5px;
 	display: inline-block;
 	float: right;
-	vertical-align: top;
+	vertical-align: bottom;
 }
 .navbar-nav  li a:hover {
-	color: #1abc9c !important;
+	color: #0082AA !important;
 	margin-top: -10px;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
 	background: rgba(200, 200, 200, 0.1);
