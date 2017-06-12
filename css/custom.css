@@ -1,11 +1,27 @@
+h3{
+	margin-top: 40px;
+}
+
 .container {
 	max-width: 1170px;
 	padding-left: 15px !important;
 	padding right: 15px !important;
 	} 
 
+div figure img{
+	width: 95%;
+}
+
+figure {
+    text-align: center;
+    display: table;
+    max-width: 95%; /* demo; set some amount (px or %) if you can */
+    margin: 10px auto; /* not needed unless you want centered */
+}
+	
 figcaption{
 	margin-bottom: 15px;
+	text-align: center;
 }
 hr {
     display: block;
@@ -35,6 +51,7 @@ hr {
 	margin-top: 4px;
 	background-color: black;
 	color: white;
+	margin-top: 22px;
 }
 .numberCircle span {
 	text-align: center;
@@ -93,6 +110,16 @@ a:hover{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	margin-top: 20px;
+}
+.footer {
+	margin-top: 30px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: #efefef;
+	text-align: center;
 }
 
 
