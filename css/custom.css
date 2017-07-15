@@ -1,7 +1,10 @@
 #map {
-        
         height: 365px;
         background-color: grey;
+}
+#namelogo {
+	display: block; 
+	margin: auto;
 }
 html {
     position: relative;
@@ -18,8 +21,8 @@ h3{
 .container {
 	max-width: 1170px;
 	padding-left: 15px !important;
-	padding right: 15px !important;
-	} 
+	padding-right: 15px !important;
+}
 
 	
 div figure img{
@@ -42,7 +45,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
+    margin: 0.2em 0;
     padding: 0;
 }
 .indent{
@@ -96,6 +99,7 @@ hr {
 .row a {
 	text-decoration: none;
 	color: inherit;
+	margin: auto;
 }
 .row a:hover{
 	color: inherit !important;
@@ -107,10 +111,10 @@ a:hover{
 	border: 0;
 	border-radius: 0;
 	font-size: 17px;
-	letter-spacing: 5px;
 	display: inline-block;
 	float: right;
 	vertical-align: bottom;
+	letter-spacing: 1.5px;
 }
 .navbar-nav  li a:hover {
 	color: #0082AA !important;
@@ -162,5 +166,11 @@ a:hover{
 {
 	#md-float-fix{ 
 		float: right !important;
+	}
+}
+@media (min-width:992px)
+{
+	.navbar  {
+		letter-spacing: 5px;
 	}
 }
