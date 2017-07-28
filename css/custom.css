@@ -6,6 +6,12 @@
 	display: block; 
 	margin: auto;
 }
+#contactmethods {
+	font-size: 34px;
+}
+#contactmethods i{
+	font-size: 38px;
+}
 html {
     position: relative;
     min-height: 100%;
@@ -168,9 +174,19 @@ a:hover{
 		float: right !important;
 	}
 }
-@media (min-width:992px)
+@media (min-width:992px) /*Changes the letter spacing on the menu items so they don't start stacking*/
 {
 	.navbar  {
 		letter-spacing: 5px;
 	}
 }
+@media (max-width:450px) /*Resizes font size on contact page*/
+{
+	#contactmethods {
+		font-size: 6.6vw !important;
+	}
+	#contactmethods i {
+	font-size: 6.9vw !important;
+	}
+}
+
