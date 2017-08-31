@@ -1,7 +1,16 @@
 #map {
-        
         height: 365px;
         background-color: grey;
+}
+#namelogo {
+	display: block; 
+	margin: auto;
+}
+#contactmethods {
+	font-size: 34px;
+}
+#contactmethods i{
+	font-size: 38px;
 }
 html {
     position: relative;
@@ -18,8 +27,8 @@ h3{
 .container {
 	max-width: 1170px;
 	padding-left: 15px !important;
-	padding right: 15px !important;
-	} 
+	padding-right: 15px !important;
+}
 
 	
 div figure img{
@@ -42,7 +51,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
+    margin: 0.2em 0;
     padding: 0;
 }
 .indent{
@@ -96,6 +105,7 @@ hr {
 .row a {
 	text-decoration: none;
 	color: inherit;
+	margin: auto;
 }
 .row a:hover{
 	color: inherit !important;
@@ -107,10 +117,10 @@ a:hover{
 	border: 0;
 	border-radius: 0;
 	font-size: 17px;
-	letter-spacing: 5px;
 	display: inline-block;
 	float: right;
 	vertical-align: bottom;
+	letter-spacing: 1.5px;
 }
 .navbar-nav  li a:hover {
 	color: #0082AA !important;
@@ -178,3 +188,19 @@ a:hover{
 		float: right !important;
 	}
 }
+@media (min-width:992px) /*Changes the letter spacing on the menu items so they don't start stacking*/
+{
+	.navbar  {
+		letter-spacing: 5px;
+	}
+}
+@media (max-width:450px) /*Resizes font size on contact page*/
+{
+	#contactmethods {
+		font-size: 6.6vw !important;
+	}
+	#contactmethods i {
+	font-size: 6.9vw !important;
+	}
+}
+
