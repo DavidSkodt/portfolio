@@ -103,11 +103,6 @@ hr {
 	transition: 0.5s;
 }
 
-.row a {
-	text-decoration: none;
-	color: inherit;
-	margin: auto;
-}
 .row a:hover{
 	color: inherit !important;
 }
