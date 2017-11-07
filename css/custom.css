@@ -15,7 +15,7 @@ h3{
 }
 p {
 	font-family: "helvetica", sans-serif;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	line-height: 170%;
 	margin-bottom: 20px;
 }
@@ -30,6 +30,9 @@ ol {
 	font-size: 1.3em;
 	line-height: 170%;
 	margin-bottom: 20px;
+}
+a {
+	color: #0082AA;
 }
 #map {
 	height: 365px;
@@ -122,7 +125,12 @@ h3{
 	padding-left: 15px !important;
 	padding-right: 15px !important;
 }
-
+header .container {
+	margin-top: 20px;
+}
+.container > hr{
+	margin-bottom: 35px;
+}
 	
 div figure img{
 	width: 95%;
@@ -191,9 +199,7 @@ hr {
 .row a:hover{
 	color: inherit !important;
 }
-a:hover{
-	color: #0082AA !important;
-}
+
 .navbar  {
 	border: 0;
 	border-radius: 0;
@@ -201,6 +207,10 @@ a:hover{
 	display: inline-block;
 	float: right;
 	letter-spacing: 1.5px;
+	color: black !important;
+}
+.navbar a{
+	color: black;
 }
 .navbar-nav  li a:hover {
 	color: #0082AA !important;
@@ -250,38 +260,14 @@ a:hover{
 	height:100%;
 }
 
-@media (max-width:768px)
-{
-	#md-float-fix{ 
-		float: none !important;
-	}
-	#md-text-align-center{ 
-		text-align: center;
-	}
-}
-
-}
-@media (min-width:768px)
-{
-	#md-float-fix{ 
-		float: right !important;
-	}
-}
-@media (min-width:992px) /*Changes the letter spacing on the menu items so they don't start stacking*/
-{
-	.navbar  {
-		letter-spacing: 5px;
-	}
-}
-
 .bgClip {
     background:url('../images/spacetexture.jpg');
     background-repeat:repeat-x;
     background-position:0 0;
-    font-size:60px;
+    font-size:3.9em;
     text-transform:uppercase;
-    text-align:center;
-    font-family:'Luckiest Guy';
+    text-align:left;
+    font-family: "helvetica", sans-serif;
     color:transparent;
     -webkit-font-smoothing:antialiased;
     -webkit-background-clip:text;
@@ -325,4 +311,37 @@ a:hover{
     to {
         background-position:100% 0
     }
+	
+	
+}
+
+@media (max-width:768px)
+{
+	#md-float-fix{ 
+		float: none !important;
+	}
+	#md-text-align-center{ 
+		text-align: center;
+	}
+}
+
+}
+@media (min-width:768px)
+{
+	#md-float-fix{ 
+		float: right !important;
+	}
+}
+@media (min-width:992px)
+{
+	.navbar  { /*Changes the letter spacing on the menu items so they don't start stacking*/
+		letter-spacing: 5px;
+	}
+}
+@media (max-width:992px)
+{
+	.bgClip {
+		font-size: 2.9em;
+		text-align: center;
+	}
 }
