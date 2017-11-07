@@ -74,7 +74,7 @@ a {
 	background-size: cover;
 	border-radius: 5px 5px 0 0;
 }
-.mycards{
+.customhover{
 	position: relative;
 	display: inline-block;
 	background-color: #fff;
@@ -85,7 +85,7 @@ a {
 	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);	
 }
 
-.mycards::after {
+.customhover::after {
   content: "";
   border-radius: 5px;
   position: absolute;
@@ -99,12 +99,13 @@ a {
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.mycards:hover {
+.customhover:hover {
   -webkit-transform: scale(1.005, 1.05);
   transform: scale(1.05, 1.05);
+  z-index: 1;
 }
 
-.mycards:hover::after {
+.customhover:hover::after {
     opacity: 1;
 }
 
@@ -209,26 +210,15 @@ hr {
 	letter-spacing: 1.5px;
 	color: black !important;
 }
-.navbar a{
+.nav-pills a{
 	color: black;
-}
-.navbar-nav  li a:hover {
-	color: #0082AA !important;
-	margin-top: -10px;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
-	background: rgba(200, 200, 200, 0.1);
-	transition: 0.5s;
-}
-.activepage {
-	margin-top: -2px;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
-	background: rgba(200, 200, 200, 0.1);
 }
 
 .navbar-nav {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	margin-top: 3px;
 }
 .footer {
 	position: absolute;
@@ -344,4 +334,10 @@ hr {
 		font-size: 2.9em;
 		text-align: center;
 	}
+	.navbar-nav {
+		margin-top: -3px;
+	}
+}
+.active {
+	color: white;
 }
