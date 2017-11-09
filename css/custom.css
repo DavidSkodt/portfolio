@@ -34,15 +34,19 @@ ol {
 a {
 	color: #0082AA;
 }
+#topbar {
+	height: 20%; 
+	margin: 0; 
+	padding: 15px;
+	box-shadow: 2px 2px 5px grey;
+	background-color: #050405;
+	background-image: url("https://www.transparenttextures.com/patterns/broken-noise.png");
+}
 #map {
 	height: 365px;
     background-color: grey;
 }
-#namelogo {
-	display: block; 
-	margin: auto;
-	margin-bottom: 4.5%;
-}
+
 #contactmethods {
 	font-size: 1.4em;
 	white-space: nowrap;
@@ -77,9 +81,7 @@ a {
 .customhover{
 	position: relative;
 	display: inline-block;
-	background-color: #fff;
 	border-radius: 5px;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
 	-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);	
@@ -94,7 +96,6 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   opacity: 0;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -107,6 +108,13 @@ a {
 
 .customhover:hover::after {
     opacity: 1;
+}
+
+.customshadow {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.customshadow::after {
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 html {
@@ -125,12 +133,6 @@ h3{
 	max-width: 1170px;
 	padding-left: 15px !important;
 	padding-right: 15px !important;
-}
-header .container {
-	margin-top: 20px;
-}
-.container > hr{
-	margin-bottom: 35px;
 }
 	
 div figure img{
@@ -197,10 +199,6 @@ hr {
 	  margin-top: 1%;
 }
 
-.row a:hover{
-	color: inherit !important;
-}
-
 .navbar  {
 	border: 0;
 	border-radius: 0;
@@ -208,17 +206,40 @@ hr {
 	display: inline-block;
 	float: right;
 	letter-spacing: 1.5px;
-	color: black !important;
 }
+
 .nav-pills a{
-	color: black;
+	color: white;
 }
 
 .navbar-nav {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin-top: 3px;
+	margin-top: 5px;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: rgba(0, 0, 0, 0);
+	text-decoration: underline;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	background-color: rgba(0, 0, 0, 0);
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+}
+.btn-default {
+	background-color: rgba(0, 0, 0, 0);
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+	color: white;
+}
+.btn-default:hover {
+	color: black;
+}
+.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+	color: black;
 }
 .footer {
 	position: absolute;
@@ -227,7 +248,9 @@ hr {
 	bottom: 0;
 	left: 0;
 	padding: 1rem;
-	background-color: #efefef;
+	color: gray;
+	background-color: #050405;
+	background-image: url("https://www.transparenttextures.com/patterns/broken-noise.png");
 	text-align: center;
 }
 .reverse {
@@ -250,60 +273,17 @@ hr {
 	height:100%;
 }
 
-.bgClip {
-    background:url('../images/spacetexture.jpg');
-    background-repeat:repeat-x;
-    background-position:0 0;
-    font-size:3.9em;
-    text-transform:uppercase;
+.name {
+    font-size:3.9em !important;
     text-align:left;
-    font-family: "helvetica", sans-serif;
-    color:transparent;
-    -webkit-font-smoothing:antialiased;
-    -webkit-background-clip:text;
-    -moz-background-clip:text;
-    background-clip:text;
-    -webkit-text-fill-color:transparent;
-    margin:0;
-    -webkit-animation:BackgroundAnimated 45s linear infinite;
-    -moz-animation:BackgroundAnimated 45s linear infinite;
-    -ms-animation:BackgroundAnimated 45s linear infinite;
-    -o-animation:BackgroundAnimated 45s linear infinite;
-    animation:BackgroundAnimated 45s linear infinite;
+    font-family: "Libre Baskerville", serif;
+	font-weight: normal;
+	letter-spacing: 1px;
+	white-space: nowrap;
+    color:white !important;
+	margin: 0;
 }
-    @keyframes BackgroundAnimated {
-    from {
-        background-position:0 0
-    }
-    to {
-        background-position:100% 0
-    }
-}
-    @-webkit-keyframes BackgroundAnimated {
-    from {
-        background-position:0 0
-    }
-    to {
-        background-position:100% 0
-    }
-}
-    @-ms-keyframes BackgroundAnimated {<     from {
-        background-position:0 0
-    }
-    to {
-        background-position:100% 0
-    }
-}
-    @-moz-keyframes BackgroundAnimated {
-    from {
-        background-position:0 0
-    }
-    to {
-        background-position:100% 0
-    }
-	
-	
-}
+    
 
 @media (max-width:768px)
 {
@@ -312,6 +292,11 @@ hr {
 	}
 	#md-text-align-center{ 
 		text-align: center;
+	}
+	.name {
+		font-size: 2.8em !important;
+		text-align: center;
+		margin-top: 7px;
 	}
 }
 
@@ -322,22 +307,21 @@ hr {
 		float: right !important;
 	}
 }
+
+@media (max-width:992px)
+{
+	.navbar-nav {
+		margin-top: 5px;
+	}
+}
+
 @media (min-width:992px)
 {
 	.navbar  { /*Changes the letter spacing on the menu items so they don't start stacking*/
 		letter-spacing: 5px;
 	}
 }
-@media (max-width:992px)
-{
-	.bgClip {
-		font-size: 2.9em;
-		text-align: center;
-	}
-	.navbar-nav {
-		margin-top: -3px;
-	}
-}
+
 .active {
 	color: white;
 }

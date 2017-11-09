@@ -4,10 +4,11 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Libre+Baskerville">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/custom.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script type="text/javascript" src="js/jquery-3.2.1.slim.min.js" ></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/tether.js" ></script>
 		<script type="text/javascript" src="js/bootstrap.js" ></script>
 		<script type="text/javascript" src="js/modal.js"></script>
@@ -39,31 +40,39 @@
 	</head>
 	
 	<body>
-		<header	>
-			<div class="container">
-				<div class="row" style="position: relative;">
-					<a href="./index.html">
-						<div class="col-xs-12 col-sm-5" >
-							<h1 class="bgClip" style="white-space: nowrap;">David Skødt</h1>
-						</div> <!-- col -->
-					</a>
-					<div class="col-xs-12 col-sm-7" style="position: static; bottom: 0; right: 0; z-index: 1;">
-						<nav class="navbar navbar-nav" id="md-float-fix">
-							<ul class="nav nav-pills hidden-xs">
-								<li class="customhover"><a href="./index.html"><span class="glyphicon glyphicon-home"></span> Projects</a></li>
-								<li class="customhover"><a href="./aboutme.html"><span class="glyphicon glyphicon-user"></span> About Me</a></li>
-								<li class="customhover active"><a href="./contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
-							</ul>
-							<div class="nav nav-stacked hidden-lg hidden-md hidden-sm" style="width: 100%; margin: 5px; color: white; position: static; bottom: 0; right: 0;">
-								<a href="./index.html" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-home"></span> Projects</a>
-								<a href="./aboutme.html" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-user"></span> About Me</a>
-								<a href="./contact.html" class="btn btn-primary btn-lg btn-block active"><span class="glyphicon glyphicon-envelope"></span> Contact</a>
+		<header>
+			<div class="jumbotron" id="topbar">
+				<div class="container">
+					<div class="row" style="position: relative;">
+						<a href="./index.html">
+							<div class="hidden-xs hidden-sm col-md-5">
+								<h1 class="name customhover">David Skødt.</h1>
 							</div>
-						</nav>
-					</div> <!-- column -->
-				</div> <!-- row -->
-				
-			</div> <!-- container -->
+							<div class="hidden-lg hidden-md hidden-xs col-sm-5">
+								<h1 class="name customhover" style="font-size: 4em !important">DS</h1>
+							</div>
+							<div class="hidden-lg hidden-md hidden-sm col-xs-12" style="text-align: center;">
+								<h1 class="name customhover" style="font-size: 4em !important">DS</h1>
+							</div>
+						</a>
+						<div class="col-xs-12 col-sm-7" style="position: static; bottom: 0; right: 0; z-index: 1;">
+							<nav class="navbar navbar-nav" id="md-float-fix">
+								<ul class="nav nav-pills hidden-xs">
+									<li><a href="./index.html"> Projects</a></li>
+									<li><a href="./aboutme.html"> About Me</a></li>
+									<li class="active"><a href="./contact.html"> Contact</a></li>
+								</ul>
+								<div class="nav nav-stacked hidden-lg hidden-md hidden-sm" style="min-width: 60%; margin: 5px; color: white; position: static; bottom: 0; right: 0;">
+									<a href="./index.html" class="btn btn-default btn-lg btn-block">Projects</a>
+									<a href="./aboutme.html" class="btn btn-default btn-lg btn-block">About Me</a>
+									<a href="./contact.html" class="btn btn-default btn-lg btn-block active">Contact</a>
+								</div>
+							</nav>
+						</div> <!-- column -->
+					</div> <!-- row -->
+					
+				</div> <!-- container -->
+			</div> <!-- jumbotron -->
 		</header>
 		<!-- SITE STARTS HERE -->
 		<div class="container">
