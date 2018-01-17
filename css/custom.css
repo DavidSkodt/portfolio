@@ -15,7 +15,7 @@ h3{
 }
 p {
 	font-family: "helvetica", sans-serif;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	line-height: 170%;
 	margin-bottom: 20px;
 }
@@ -30,6 +30,7 @@ ol {
 	font-size: 1.3em;
 	line-height: 170%;
 	margin-bottom: 20px;
+	margin-left: 40px;
 }
 a {
 	color: #0082AA;
