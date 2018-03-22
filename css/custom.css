@@ -131,9 +131,8 @@ h3{
 }
 
 .container {
-	max-width: 1170px;
-	padding-left: 15px !important;
-	padding-right: 15px !important;
+	margin: 0 auto; 
+	width: 100%;
 }
 	
 div figure img{
@@ -166,8 +165,11 @@ hr {
 .myshadow{
 	box-shadow: 2px 2px 5px grey;
 }
-.img-reponsive{
-	margin-bottom: 5px;
+.img-responsive{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: auto; 
+	margin-right: auto;
 }
 .numberCircle {
 	border-radius: 50%;

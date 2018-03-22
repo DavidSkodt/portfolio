@@ -51,33 +51,43 @@
 			</div> <!-- jumbotron -->
 		</header>
 		<!-- SITE STARTS HERE -->
-		<div class="container">
+		<div class="container" style="background-color: #3FA9F5; min-height: 100vh">
 			<section class="content">
 				<div class="row">
 					<div style="margin-top: 100px"></div>
-					<div class="col-md-12">
-						<h1 style="text-align: center; font-size: 4em">Redesigning a cinema web app</h1>
+					<div class="col-md-8 col-md-offset-2">
+						<h1 style="text-align: left; font-size: 4em; color: white; text-align: center;">Nordisk Filmbiografer</h1>
+						<h2 style="text-align: left; font-size: 2em; color: white; font-weight: lighter; text-align: center;">ux research + guerrilla testing + wireframing</h2>
+						<img class="img-responsive" style="max-height: 700px;" src="./images/test.png" alt="A graph that shows that young adults go to the cinema more than other age groups">
 					</div>
-					<div class="col-md-8 col-md-offset-2"> <!-- A - Article-->
+				
+					<div class="col-md-8 col-md-offset-2" style="color: white; margin-bottom: 100px";>
 						<p>I am a huge movie geek, and I always felt like there was something romantic about going to the cinema. That sense of romanticism, however, has been tarnished a bit over the years, as I have grown frustrated with a few of the things I now have come to associate with the movie-going experience: the exceedingly high cost of candy, and a clunky, suboptimal website experience.</p>
 						
-						<p>In this solo project, I attempt to use research and intuition to redesign a Danish cinema website for ease-of-use on mobile. This was my very first real design project. A lot of the techniques and software that I used, I had to teach myself along the way. For this reason, my approach shifted a few times. At the very end of this case study, I reflect upon the most important lessons this project has taught me.</p>
+						<p>In this project, I attempt to use research and intuition to identify real usability issues and pain points on a live, cinema website. This was my very first real design project, so a lot of the techniques and software that I used, I had to teach myself along the way. At the very end of this case study, I reflect upon the most important lessons this project has taught me.
 					
 					
-						<p>This case study can be seen as two parts of a whole. In the first part, I evaluate the current website and gather knowledge through research. In the second, I show you the website redesign that I came up with.</p>
-					
-						
-						
-						<h2 style="margin-top: 100px">Part 1: The current website</h2>
-						<p>Before blindly rushing into a redesign, I had to validate that there was a need for it in the first place. Since I had no direct access to any of the company’s data, I had to get creative.
+						<p>This case study can be seen as two parts of a whole. In this first part, I evaluate the current website and gather knowledge through research. In the second, I try to tackle the task of redesigning the website.</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="container">
+			<section class="content">
+				<div class="row">				
+					<div class="col-md-8 col-md-offset-2">
+						<h2 style="margin-top: 100px">Research</h2>
+						<p>Since I had no direct access to any of the company’s data, I had to get creative.</p>
 						
 						<p>Nordisk Film Biografer is the largest chain of cinemas in Denmark, and owns 22 different cinemas, spread out across the country. The cinemas receive about 6 million visitors annually, in total. Their website gets about 513.000 views per month. Kino.dk, which is a ticket hub for 49 Danish cinemas, including the cinemas from NFbio.dk, gets about twice as many views. Kino.dk also offers ticket sales to Nordisk Film Biografers showings, but I have no way of knowing which of the two sites sell more tickets on Nordisk Film Biografers behalf.</p>
 						
 						<p>The information I managed to scrape together was scarce and dated. The graph below is from a cultural survey from 2012. It tells me that teens and young adults are the primary movie-goers. I used this knowledge to focus on the younger of two personas.
 						
-						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px" src="./images/cinemabyage.png" alt="A graph that shows that young adults go to the cinema more than other age groups">
+
+						<img class="img-responsive" style="max-height: 80%" src="./images/cinemabyage.png" alt="A graph that shows that young adults go to the cinema more than other age groups">
+
 						
-						<p>I wrote an email to Nordisk Film Biografer, hoping that they could tell me how many of their customers bought or reserved their tickets online, but this was not information that they were willing to disclose. This information would not directly affect the design, but it would give me a better insight into the size of the user base.</p>
+						<p>I wrote an email to Nordisk Film Biografer, thinking they might be willing to offer me some ethnographic data, and hoping that they could tell me how many of their customers bought or reserved their tickets online. This was not information that they were willing to disclose, unfortunately. </p>
 						
 						<h3>The Guerrilla Test</h3>
 						
@@ -115,7 +125,7 @@
 							<p style="margin-top: 40px;"><strong>Length</strong></p>
 							<p>15 minutes, max. Because I approached people during shopping, I knew that even 15 minutes would be stretching it.</p>
 							<p style="margin-top: 40px;"><strong>Participants</strong></p> 
-							<p>Anyone with a smartphone.</p>
+							<p>Anyone with a smartphone, who reported having been to the cinema within the last two months.</p>
 							<p style="margin-top: 40px;"><strong>Metrics</strong></p> 
 							<p>Due to the relative small scale of the project and small group of participants, the things I payed attention to were mostly qualitative. I payed particular attention to user pain points, critical errors and task completion rates.</p>
 						</div>
@@ -207,42 +217,64 @@
 						<p>After specifying movie, date, time and cinema, if the participant was not logged in beforehand, all progress would be lost.</br>
 						<p>This was the case for all participants. I later checked on several devices and browsers, and the issue persisted.
 						This issue was the most severe because it sets back to square one and doesn’t tell them why. I will strongly argue that this issue has a direct impact on the amount of people who complete the ticketing process.</p>
+						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 800px; margin-left: auto; margin-right: auto;" src="./images/crashflow.png" alt="A picture of the most prominent issues, on post-its">
 						<p>Edit: This issue has since been fixed.</p>
 						
 						<p><strong>Upcoming movies are hard to locate</strong></p>
 						<p>The navigation item that takes users to the “upcoming movies”-page difficult to find. One participant searched for 6 minutes and another for 3½ minutes before I stopped them, as I sensed their frustration.</p>
+						<p><em>"I just can't find it"</em>, several of the participants voiced.</p>
 						<p>Having forgotten where the menu item was since originally creating the tasks, I also failed to locate the item, when asked by a participant.</p>
 						<p>The page is reached by clicking a very ambiguous item in a drop down menu labeled “select movie”. This drop down is the third consecutive drop down in a column, after “choose cinema” and “choose date”.</p>
+						
+						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 800px; margin-left: auto; margin-right: auto;" src="./images/issuesupcoming.png" alt="A picture of the most prominent issues, on post-its">
+						
 						<p>Seeing as the act of checking future releases turned out to be in the top 3 of reported goals in the preliminary research, this needs to be much easier to locate. </p>
 						<p>A fast and cheap solution to this would be to relocate the menu item, perhaps as one of the tabs at the top of the site.</p>
+						
+						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 800px; margin-left: auto; margin-right: auto;" src="./images/upcomingmockup.png" alt="A mockup of a possible solution to the issue of the page named upcoming movies being overlooked.">
+						
 						<p>If resources are not an issue, the best placement could be determined with an open card sort. This would also likely lead to more intuitive information architecture, overall.</p>
 						
 						<h3>Medium priority</h3>
 						<p><strong>The “buy / reserve” dialogue box is ambiguous.</strong></p>
 						<p>After selecting a movie, you are prompted then to select a show time. When clicking a time, a dialogue box appears. This box, with it’s “buy / reserve” button was frequently a point where participants would hesitate.</p>
 						<p>Participants would scroll up or down, as if they had missed something. In other words, they are uncertain if this is the step they should be taking next. That might be because there is a lot going on, and the design does very little to lead them.</p>
-						<p>If they just selected the movie, a dialogue appears and the background darkens. Good, they know that they have to focus on what is in the foreground. But this dialogue is very convoluted, and the show times are not visible until you scroll down. There are 5 different red square buttons screaming for attention, none of which are actually the button that takes them to the next step in the process. If they scroll down, they see the movie show times for every cinema that shows this movie (unless they specified the cinema) which can be as many as all of them (23). Clicking one of these times makes another dialogue appear, with another small red square button that says “reserve/buy”. The dialogue is about 1/9th the size of the screen, and the same background color and hue as the background behind it. </p>
+						<p>If they just selected the movie, a dialogue appears and the background darkens. Good, they know that they have to focus on what is in the foreground. But this dialogue is very convoluted, and the show times are not visible until you scroll down. There are 5 different red square buttons screaming for attention, none of which are actually the button that takes them to the next step in the process. If they scroll down, they see the movie show times for every cinema that shows this movie (unless they specified the cinema) which can be as many as all of them (23).</p>
+						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 1600px; margin-left: auto; margin-right: auto;" src="./images/longoversight.png" alt="A mockup of a possible solution to the issue of the page named upcoming movies being overlooked.">
+						<p>Clicking one of these times makes another dialogue appear, with another small red square button that says “reserve/buy”. The dialogue is about 1/9th the size of the screen, and the same background color and hue as the background behind it. </p>
+						
+						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 1600px; margin-left: auto; margin-right: auto;" src="./images/popup modified mockup.png" alt="A mockup of a possible solution to the issue of the page named upcoming movies being overlooked.">
+						
 						<p>A fast and cheap solve for this is to make the second dialogue much larger and more prominent, so that it takes up more space and appears more important as well as making the button to progress visually distinguished from the rest.</p>
+						
+						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 1600px; margin-left: auto; margin-right: auto;" src="./images/popup solution mockup.png" alt="A mockup of a possible solution to the issue of people missing the buy / reserve modal">
+						
 						<p>The better solution would be to restructure the first dialogue box, so that the show times are immediately visible, and generally strive for better visual cues.</p>
 
 						<p><strong>The “cinemas” tab confused some participants</strong></p>
-						<p>In order to solve the given tasks, I observed a few instances where the participants would choose to press the “cinemas” tab, instead of using the drop-down menus on the “tickets” tab. </p>
+						<p>I observed a few instances where the participants would choose to press the “cinemas” tab, instead of using the drop-down menus on the “tickets” tab. </p>
 						<p>People would then stay here for a little while, scrolling up and down, not quite sure how to progress.</p>
 						<p>This tab has a lot of things fighting for attention. Six menu items, some of which are redundant, three unlinked movie posters, and a carousel that advertises the upcoming events for this particular cinema are the first things to catch the eye. “Program” is among the menu items, and there is also a separate “see program” button visible under the headline: “Program”, immediately following the menu.  </p>
 						<p>So if they are so plainly visible, why do people not see them?</p>
+						
+						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 1600px; margin-left: auto; margin-right: auto;" src="./images/biograf tab mockup.png" alt="A mockup of a possible solution to the issue of people missing the buy / reserve modal">
+						
 						<p>What the participant expected was to see the program for the cinema, front and center. They scan the page, hoping to see images of movie posters that they can click on, or another dropdown menu for movie selection.</p>
 						<p>The quick fix here is to simply put the program as the main item of the submenu.</p>
+						
+						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 1600px; margin-left: auto; margin-right: auto;" src="./images/biograf tab solution mockup.png" alt="A mockup of a possible solution to the issue of people missing the buy / reserve modal">
+						
 						<p>The better solution would be to distinguish the buttons with clearer signifiers, so that users immediately identify their options on this page.</p>
 						
 						<h3>Low priority</h3>
 						<p><strong>Pressing “next week” when browsing by date only moves the view three days at the time</strong></p>
 						<p>This is quite a small issue, and likely stems from the fact that the website hasn’t been developed mobile-first.</p>
 						<p>When browsing by date, the button says “next week”, but only moves as many days ahead as can fit on whichever device is being used.</p>
-						<p>“Isn’t Sunday part of this week?”, one participant asked, hesitating to press the “next week” button when the view was only letting her see as far as Saturday.</p>
+						<p><em>“Isn’t Sunday part of this week?”</em>, one participant asked, hesitating to press the “next week” button when the view was only letting her see as far as Saturday.<em>"It is a little confusing that it only shows 3 days at the time"</em>, they elaborated.</p>
 						<p>The simple fix is to change this to just say “next”, which they have done since I conducted the test.</p>
 						
 						<p><strong>“Events” is unclear.</strong></p>
-						<p>While I initially categorized this problem as “medium priority”, based on the fact that one of the main navigational tabs could be misinterpreted, I later choose to recategorize this issue to “low priority”. The reason it is now less important is because the confusion was only mentioned once, and by only one participant. The confusion presumably stems from the word being a foreign language from Danish, but the way she phrased this was ambiguous. She could has well have understood the word, but never have heard of a cinema holding events before. </p>
+						<p>While I initially categorized this problem as “medium priority”, based on the fact that one of the main navigational tabs could be misinterpreted, I later choose to recategorized this issue to “low priority”. The reason it is now less important is because the confusion was only mentioned once, and by only one participant. The confusion presumably stems from the word being a foreign language from Danish, but the way she phrased this was ambiguous. She could has well have understood the word, but never have heard of a cinema holding events before. </p>
 						
 						<p><strong>The “buy/reserve” dialogue glitches</strong></p>
 						<p>When you click a show time twice, the “buy/reserve” dialogue will disappear, and pressing the desired time again will not make it reappear. For it to reappear, you have to click another time first, and then the intended one, or reload the page.</p>
@@ -257,7 +289,16 @@
 						</ul>
 						<p>I have provided possible solutions based on the problems that the usability test revealed. This guerrilla test would be an excellent precursor to more extensive testing of the current website, but that isn't within the scope of my project. Instead, armed with new-found knowledge, I decided to try my hands at redesigning the website.</p>
 						
-						<h2>Part 2: The Redesign</h2>
+						<!-- <h2>Part 2: The Redesign</h2>
+						<p>Now, there are plenty of arguments as to why a redesign of the website isn’t entirely necessary. Resource-wise, I have given fairly easy solutions to all of the usability issues that I found.</p>
+						
+						<p>I wanted to do a redesign in order to teach myself how. That is, after all, what this entire project is about.
+						In order to limit the breadth of the project a little, I decided to focus on the user flow for ticket purchase. I put my focus there, because it is likely to be the most important flow for the business objective of the company. Secondarily, I wanted to flesh out the features necessary for users to achieve the 3 most common goals revealed by the preliminary research.</p>
+						
+						<p>The best way to do design anything, is to test with your users throughout an iterative process. Because of time constraints, most of my choices were not run by users, but UX peers through online forums and slack channels. I did, however, test the most recent iteration on a few friends who had not been exposed to the project prior.</p> -->
+						
+						
+
 					</div>
 				</div>
 			</section><!-- content section -->
