@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Libre+Baskerville">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/custom.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -76,7 +76,7 @@
 			<section class="content">
 				<div class="row">				
 					<div class="col-md-8 col-md-offset-2">
-						<h2 style="margin-top: 100px">Research</h2>
+						<h1 class="sectionheader">Research</h1>
 						<p>Since I had no direct access to any of the company’s data, I had to get creative.</p>
 						
 						<p>Nordisk Film Biografer is the largest chain of cinemas in Denmark, and owns 22 different cinemas, spread out across the country. The cinemas receive about 6 million visitors annually, in total. Their website gets about 513.000 views per month. Kino.dk, which is a ticket hub for 49 Danish cinemas, including the cinemas from NFbio.dk, gets about twice as many views. Kino.dk also offers ticket sales to Nordisk Film Biografers showings, but I have no way of knowing which of the two sites sell more tickets on Nordisk Film Biografers behalf.</p>
@@ -88,8 +88,15 @@
 
 						
 						<p>I wrote an email to Nordisk Film Biografer, thinking they might be willing to offer me some ethnographic data, and hoping that they could tell me how many of their customers bought or reserved their tickets online. This was not information that they were willing to disclose, unfortunately. </p>
-						
-						<h3>The Guerrilla Test</h3>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="container" style="background-color: white; min-height: 100vh">
+			<section class="content">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<h1 class="sectionheader">The Guerrilla Test</h1>
 						
 						<p>In order to learn more about how people interacted with the website, I wanted to conduct a usability test. Due to a lack of resources (both in time, manpower and funds), I decided to conduct a <strong>guerrilla test</strong>. This is an alternative to doing a full usability test, which comes with its own pros and cons. The key difference lies in how people are recruited for the test. In a traditional usability study, people are recruited in advance, for long (45 minutes - 1 hour) sessions. This allows for depth and rigor. The guerrilla version takes place in public, where people are recruited for short, on-the-spot sessions.</p>
 					</div>
@@ -118,39 +125,30 @@
 					<div class="col-md-8 col-md-offset-2">
 						<p>The most important of these points is arguably that you rarely get to test with people who are within resemble your users, but a guerrilla test is rarely the only test that you would do on a larger project. I argue that it serves the role of being a preliminary test, meant to catch broad issues. In my case, however, it stands on its own because of resource constraints.</p>
 						<div style="margin-left: 60px;">
-							<p style="margin-top: 40px;"><strong>Purpose</strong></p>
-							<p>The test included just the mobile version of the current (as of date of test) website. The test focused mostly on navigation, as required by the different tasks.</p>
-							<p style="margin-top: 40px;"><strong>Scope</strong></p>
-							<p>The purpose of the test was to locate as many possible pain points as possible that may create friction in the flows related to the most common user goals. Secondarily, observing people interact with the current design would give me valuable insights into the user.</p>
-							<p style="margin-top: 40px;"><strong>Length</strong></p>
-							<p>15 minutes, max. Because I approached people during shopping, I knew that even 15 minutes would be stretching it.</p>
-							<p style="margin-top: 40px;"><strong>Participants</strong></p> 
-							<p>Anyone with a smartphone, who reported having been to the cinema within the last two months.</p>
-							<p style="margin-top: 40px;"><strong>Metrics</strong></p> 
-							<p>Due to the relative small scale of the project and small group of participants, the things I payed attention to were mostly qualitative. I payed particular attention to user pain points, critical errors and task completion rates.</p>
+							<p><strong>Purpose:</strong> The test included just the mobile version of the current (as of date of test) website. The test focused mostly on navigation, as required by the different tasks.</p>
+							<p><strong>Scope:</strong> The purpose of the test was to locate as many possible pain points as possible that may create friction in the flows related to the most common user goals. Secondarily, observing people interact with the current design would give me valuable insights into the user.</p>
+							<p><strong>Length:</strong> 15 minutes, max. Because I approached people during shopping, I knew that even 15 minutes would be stretching it.</p>
+							<p><strong>Participants:</strong> Anyone with a smartphone, who reported having been to the cinema within the last two months.</p>
+							<p><strong>Metrics:</strong> Due to the relative small scale of the project and small group of participants, the things I payed attention to were mostly qualitative. I payed particular attention to user pain points, critical errors and task completion rates.</p>
 						</div>
 						<p>In preperation of the test, I wanted to figure out what users wanted to accomplish when visiting the website. I made a survey on social media, asking what people usually went to cinema sites to do.</p>
 						
 						<p>The three goals that were mentioned the most were:</p>
-						<ol>
-							<li>To see what movies are showing this week.</li>
-							<li>To see the show times on a particular date.</li>
-							<li>To see which movies are coming out in the near future.</li>
-						</ol>
-						<p>Ordering a ticket came in 4th.</p>
+						<div style="margin-left: 60px;">
+							<p><strong>1:</strong> To see what movies are showing this week.</p>
+							<p><strong>2:</strong> To see the show times on a particular date.</p>
+							<p><strong>3:</strong> To see which movies are coming out in the near future.</p>
+							<p><strong>4:</strong> To order a ticket, knowing already what they want to see and where.</p>
+						</div>
 						<p>I used these three goals as the core focus for my usability test and to limit the scope of my redesign. In order to run a test with these goals, I had to rewrite them into tasks, and then build up scenarios around the task. Note that these scenarios were written and executed in Danish, but that the translated versions below match the phrasing and tone fairly well. I was careful to phrase the scenarios in such a way that the words did not match any navigation elements on the cinema website.</p>
 						
 						<div style="margin-left: 60px;">
-							<p style="margin-top: 40px;"><strong>Exploratory task</strong></p>
-							<p>This is the website. First, I would like you to look around and tell me your impressions. What do you think is possible on this site? You can scroll up and down, but please stay on this page to begin with.</p>
-							<p style="margin-top: 40px;"><strong>Scenario 1:</strong></p>
-							<p>You want to go to the movies, but haven’t decided on which movie to watch. You plan to go to the cinema this Sunday night. The closest cinema to you is in the Field’s shopping mall, in Copenhagen.</p>
+							<p><strong>Exploratory task:</strong> This is the website. First, I would like you to look around and tell me your impressions. What do you think is possible on this site? You can scroll up and down, but please stay on this page to begin with.</p>
+							<p><strong>Scenario 1:</strong> You want to go to the movies, but haven’t decided on which movie to watch. You plan to go to the cinema this Sunday night. The closest cinema to you is in the Field’s shopping mall, in Copenhagen.</p>
 							<p>Find out which movies are showing on Sunday (the 10th).</p>
-							<p style="margin-top: 40px;"><strong>Scenario 2:</strong></p>
-							<p>You and your two friends are talking about watching the movie “Baby Driver”. You agree to go to the cinema on Wednesday the 13. Of September, at around 20:00. You decide to go to the cinema located in Kennedy Arkaden, Aalborg. </p>
+							<p><strong>Scenario 2:</strong>You and your two friends are talking about watching the movie “Baby Driver”. You agree to go to the cinema on Wednesday the 13. Of September, at around 20:00. You decide to go to the cinema located in Kennedy Arkaden, Aalborg. </p>
 							<p>Reserve three (3) tickets for the movie “Baby Driver” on the 13. Of September at around 20:00 at the cinema in Kennedy Arkaden, Aalborg.</p>
-							<p style="margin-top: 40px;"><strong>Scenario 3:</strong></p> 
-							<p>There aren’t really any movies currently showing that you want to see. You figure you’ll look ahead a little, to see what is coming out later.</p>
+							<p><strong>Scenario 3:</strong> There aren’t really any movies currently showing that you want to see. You figure you’ll look ahead a little, to see what is coming out later.</p>
 							<p>Find out which movies are coming out in October.</p>
 						</div>
 						<p>In order to record the sessions, I constructed a DIY “Brundlefly”, as coined by Steve Krug, from a universal phone holder, a webcam and duct tape.</p>
@@ -158,9 +156,23 @@
 						<p>My initial plan was to conduct the test on moviegoers at the local cinema, but my idea was quickly shot down when I was politely rejected when I proposed the idea to them over the phone. The thought had crossed my mind that they might, but I wasn’t quite prepared for how many places would shut me out when I then called around to the places I had considered as backup locations. Most people were afraid that I would upset their customers, or asked me to pay a fee. I eventually had some luck at the very local grocery store. A grocery store is a suboptimal choice, because people don't "hang around" at grocery stores. They are there to complete a specific task, and then leave.</p>
 						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px" src="./images/brugsensetup.jpg" alt="A picture of my setup at the local grocery store.">
 						<p>I approached shoppers politely, and asked for their time in return for covering a small amount of their bill on groceries (25 DKK ≈ 4.11 USD). I wrangled 4 participants into participating. I had hoped for at least 5, but the store grew very quiet at 7 pm.</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="container" style="background-color: white; min-height: 100vh">
+			<section class="content">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<h1 class="sectionheader">Evaluation</h1>
+						<p>As I reviewed the footage, I took note of the task completion rates of each of the scenarios mentioned earlier. I coded their performances thusly:
 						
-						<h3>Results of the test</h3>
-						<p>As I reviewed the footage, I took note of the task completion rates of each of the scenarios mentioned earlier.</p>
+						<div style="margin-left: 60px;">
+							<p><strong>1:</strong> The participant performed the task without any problems.</p>
+							<p><strong>2:</strong> The participant performed the task with minor difficulties.</p>
+							<p><strong>3:</strong> The participant was unable to perform the task.</p>
+						</div>
+						
 						<table class="table">
 							<thead>
 								<tr>
@@ -173,29 +185,29 @@
 							<tbody>
 								<tr>
 									<td>Participant 1</td>
-									<td>2</td>
-									<td>2</td>
-									<td>1</td>
+									<td class="yellow">2</td>
+									<td class="yellow">2</td>
+									<td class="red">1</td>
 								</tr>
 								<tr>
 									<td>Participant 2</td>
-									<td>3</td>
-									<td>2</td>
+									<td class="green">3</td>
+									<td class="yellow">2</td>
 									<td>N/A</td>
 								</tr>
 								<tr>
 									<td>Participant 3</td>
-									<td>3</td>
-									<td>2</td>
-									<td>3</td>
+									<td class="green">3</td>
+									<td class="yellow">2</td>
+									<td class="green">3</td>
 								</tr>
 								<tr>
 									<td>Participant 4</td>
-									<td>3</td>
-									<td>3</td>
-									<td>1</td>
+									<td class="green">3</td>
+									<td class="green">3</td>
+									<td class="red">1</td>
 								</tr>
-								<tr>
+								<tr style="font-weight: bold;">
 									<td>Sum</td>
 									<td>11</td>
 									<td>9</td>
@@ -204,23 +216,18 @@
 							</tbody>
 						</table>
 						
-						<p>3 = The participant performed the task without any problems.</br>
-						2 = The participant performed the task with minor difficulties.</br>
-						1 = The participant was unable to perform the task.</p>
-						
 						<p>Even with so few tasks and participants, this served as a good indicator of where to put most of my focus. Using this table as an outset, I arranged the issues that I observed on a priority list, going from high to low priority. Priority is based on how serious the issue is for the user experience, and for the bottom line of the Nordisk Film Biografer.</p>
 						
-						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 800px; margin-left: auto; margin-right: auto;" src="./images/ranked.jpg" alt="A picture of the most prominent issues, on post-its">
-						
-						<h3>High priority</h3>
-						<p><strong>Ticket buying progress resets after logging in</strong></p>
+						<img class="img-responsive" style="height: auto; max-width: 50%; margin: 20px auto 20px auto;" src="./images/ranked.jpg" alt="A picture of the most prominent issues, on post-its">
+
+						<h3>1: Ticket buying progress resets after logging in</h3>
 						<p>After specifying movie, date, time and cinema, if the participant was not logged in beforehand, all progress would be lost.</br>
 						<p>This was the case for all participants. I later checked on several devices and browsers, and the issue persisted.
 						This issue was the most severe because it sets back to square one and doesn’t tell them why. I will strongly argue that this issue has a direct impact on the amount of people who complete the ticketing process.</p>
 						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 800px; margin-left: auto; margin-right: auto;" src="./images/crashflow.png" alt="A picture of the most prominent issues, on post-its">
 						<p>Edit: This issue has since been fixed.</p>
 						
-						<p><strong>Upcoming movies are hard to locate</strong></p>
+						<h3>2: Upcoming movies are hard to locate</h3>
 						<p>The navigation item that takes users to the “upcoming movies”-page difficult to find. One participant searched for 6 minutes and another for 3½ minutes before I stopped them, as I sensed their frustration.</p>
 						<p><em>"I just can't find it"</em>, several of the participants voiced.</p>
 						<p>Having forgotten where the menu item was since originally creating the tasks, I also failed to locate the item, when asked by a participant.</p>
@@ -235,48 +242,78 @@
 						
 						<p>If resources are not an issue, the best placement could be determined with an open card sort. This would also likely lead to more intuitive information architecture, overall.</p>
 						
-						<h3>Medium priority</h3>
-						<p><strong>The “buy / reserve” dialogue box is ambiguous.</strong></p>
+						
+						<h3>3: The “buy / reserve” dialogue box is ambiguous.</h3>
 						<p>After selecting a movie, you are prompted then to select a show time. When clicking a time, a dialogue box appears. This box, with it’s “buy / reserve” button was frequently a point where participants would hesitate.</p>
 						<p>Participants would scroll up or down, as if they had missed something. In other words, they are uncertain if this is the step they should be taking next. That might be because there is a lot going on, and the design does very little to lead them.</p>
 						<p>If they just selected the movie, a dialogue appears and the background darkens. Good, they know that they have to focus on what is in the foreground. But this dialogue is very convoluted, and the show times are not visible until you scroll down. There are 5 different red square buttons screaming for attention, none of which are actually the button that takes them to the next step in the process. If they scroll down, they see the movie show times for every cinema that shows this movie (unless they specified the cinema) which can be as many as all of them (23).</p>
 						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 1600px; margin-left: auto; margin-right: auto;" src="./images/longoversight.png" alt="A mockup of a possible solution to the issue of the page named upcoming movies being overlooked.">
 						<p>Clicking one of these times makes another dialogue appear, with another small red square button that says “reserve/buy”. The dialogue is about 1/9th the size of the screen, and the same background color and hue as the background behind it. </p>
-						
-						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 1600px; margin-left: auto; margin-right: auto;" src="./images/popup modified mockup.png" alt="A mockup of a possible solution to the issue of the page named upcoming movies being overlooked.">
-						
 						<p>A fast and cheap solve for this is to make the second dialogue much larger and more prominent, so that it takes up more space and appears more important as well as making the button to progress visually distinguished from the rest.</p>
-						
-						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 1600px; margin-left: auto; margin-right: auto;" src="./images/popup solution mockup.png" alt="A mockup of a possible solution to the issue of people missing the buy / reserve modal">
-						
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="container">
+			<section class="content">
+				<div class="row">
+					<div class="col-lg-4 col-lg-offset-2">			
+						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 110vh; margin-left: auto; margin-right: auto;" src="./images/popup modified mockup.png" alt="A mockup of a possible solution to the issue of the page named upcoming movies being overlooked.">
+					</div>
+					<div class="col-lg-4">	
+						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 110vh; margin-left: auto; margin-right: auto;" src="./images/popup solution mockup.png" alt="A mockup of a possible solution to the issue of people missing the buy / reserve modal">
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="container" style="background-color: white; min-height: 100vh">
+			<section class="content">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">		
 						<p>The better solution would be to restructure the first dialogue box, so that the show times are immediately visible, and generally strive for better visual cues.</p>
 
-						<p><strong>The “cinemas” tab confused some participants</strong></p>
+						<h3>4: The “cinemas” tab confused some participants</h3>
 						<p>I observed a few instances where the participants would choose to press the “cinemas” tab, instead of using the drop-down menus on the “tickets” tab. </p>
 						<p>People would then stay here for a little while, scrolling up and down, not quite sure how to progress.</p>
 						<p>This tab has a lot of things fighting for attention. Six menu items, some of which are redundant, three unlinked movie posters, and a carousel that advertises the upcoming events for this particular cinema are the first things to catch the eye. “Program” is among the menu items, and there is also a separate “see program” button visible under the headline: “Program”, immediately following the menu.  </p>
 						<p>So if they are so plainly visible, why do people not see them?</p>
-						
-						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 1600px; margin-left: auto; margin-right: auto;" src="./images/biograf tab mockup.png" alt="A mockup of a possible solution to the issue of people missing the buy / reserve modal">
-						
 						<p>What the participant expected was to see the program for the cinema, front and center. They scan the page, hoping to see images of movie posters that they can click on, or another dropdown menu for movie selection.</p>
 						<p>The quick fix here is to simply put the program as the main item of the submenu.</p>
 						
-						<img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px; max-height: 1600px; margin-left: auto; margin-right: auto;" src="./images/biograf tab solution mockup.png" alt="A mockup of a possible solution to the issue of people missing the buy / reserve modal">
-						
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="container">
+			<section class="content">
+				<div class="row">
+					<div class="col-lg-4 col-lg-offset-2">
+						<h2 style="text-align: center">Existing</h2>
+						<img class="img-responsive" style="margin-top: -20px; margin-bottom: 20px; max-height: 110vh; margin-left: auto; margin-right: auto;" src="./images/biograf tab mockup.png" alt="A mockup of a possible solution to the issue of people missing the buy / reserve modal">
+					</div>
+					<div class="col-lg-4">	
+						<h2 style="text-align: center">Change</h2>
+						<img class="img-responsive" style="margin-top: -20px; margin-bottom: 20px; max-height: 110vh; margin-left: auto; margin-right: auto;" src="./images/biograf tab solution mockup.png" alt="A mockup of a possible solution to the issue of people missing the buy / reserve modal">
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="container" style="background-color: white; min-height: 100vh">
+			<section class="content">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">	
 						<p>The better solution would be to distinguish the buttons with clearer signifiers, so that users immediately identify their options on this page.</p>
 						
-						<h3>Low priority</h3>
-						<p><strong>Pressing “next week” when browsing by date only moves the view three days at the time</strong></p>
+						<h3>5: Pressing “next week” when browsing by date only moves the view three days at the time</h3>
 						<p>This is quite a small issue, and likely stems from the fact that the website hasn’t been developed mobile-first.</p>
 						<p>When browsing by date, the button says “next week”, but only moves as many days ahead as can fit on whichever device is being used.</p>
 						<p><em>“Isn’t Sunday part of this week?”</em>, one participant asked, hesitating to press the “next week” button when the view was only letting her see as far as Saturday.<em>"It is a little confusing that it only shows 3 days at the time"</em>, they elaborated.</p>
 						<p>The simple fix is to change this to just say “next”, which they have done since I conducted the test.</p>
 						
-						<p><strong>“Events” is unclear.</strong></p>
+						<h3>6: “Events” is unclear.</h3>
 						<p>While I initially categorized this problem as “medium priority”, based on the fact that one of the main navigational tabs could be misinterpreted, I later choose to recategorized this issue to “low priority”. The reason it is now less important is because the confusion was only mentioned once, and by only one participant. The confusion presumably stems from the word being a foreign language from Danish, but the way she phrased this was ambiguous. She could has well have understood the word, but never have heard of a cinema holding events before. </p>
 						
-						<p><strong>The “buy/reserve” dialogue glitches</strong></p>
+						<h3>7: The “buy/reserve” dialogue glitches</h3>
 						<p>When you click a show time twice, the “buy/reserve” dialogue will disappear, and pressing the desired time again will not make it reappear. For it to reappear, you have to click another time first, and then the intended one, or reload the page.</p>
 						<p>This happened only once during the test, which is why I deemed it low priority. </p>
 						
