@@ -1,3 +1,11 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+
 h1{
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
@@ -36,6 +44,7 @@ ol {
 a {
 	color: #0082AA;
 }
+
 .sectionheader {
 	margin-top: 100px;
 	margin-bottom: 40px;
@@ -126,22 +135,13 @@ a {
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-html {
-    position: relative;
-    min-height: 100%;
-}
-body {
-    margin: 0 0 100px; /* bottom = footer height */
-}
+
 
 .container {
 	margin: 0 auto; 
 	width: 100%;
 }
-	
-div figure img{
-	width: 95%;
-}
+
 
 figure {
     text-align: center;
@@ -306,7 +306,14 @@ hr.style2 {
 .red {
 	background-color: #FFA0A0;
 }
-
+.splitlist {
+	margin-right: auto; 
+	margin-left: auto; 
+	height: auto;
+	max-width: 47%;
+	display: table;
+	padding: 0;
+}
 
 @media (max-width:768px)
 {
@@ -330,6 +337,19 @@ hr.style2 {
 		float: right !important;
 	}
 }
+@media (max-width:768px)
+{
+	.splitlist {
+		max-width: 70%;
+	}
+}
+@media (max-width:500px)
+{
+	.splitlist {
+		max-width: 100%;
+	}
+}
+
 
 @media (max-width:992px)
 {
@@ -342,6 +362,11 @@ hr.style2 {
 {
 	.navbar  { /*Changes the letter spacing on the menu items so they don't start stacking*/
 		letter-spacing: 5px;
+	}
+}
+@media (min-width: 1200px) {
+	.splitlist {
+		display: inline;
 	}
 }
 
