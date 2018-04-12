@@ -61,8 +61,7 @@ a {
 	margin: 0; 
 	padding: 15px;
 	box-shadow: 2px 2px 5px grey;
-	background-color: #050405;
-	background-image: url("https://www.transparenttextures.com/patterns/broken-noise.png");
+	background-color: white;
 }
 #map {
 	height: 365px;
@@ -200,7 +199,7 @@ hr.style2 {
 }
 
 .nav-pills a{
-	color: white;
+	color: black;
 }
 
 .navbar-nav {
@@ -214,23 +213,29 @@ hr.style2 {
 	text-decoration: underline;
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-	background-color: rgba(0, 0, 0, 0);
-	border-style: solid;
-	border-color: white;
-	border-width: 1px;
+	background-color: #3FA9F5;
+	color: black;
 }
 .btn-default {
 	background-color: rgba(0, 0, 0, 0);
 	border-style: solid;
-	border-color: white;
+	border-color: black;
 	border-width: 1px;
-	color: white;
+	color: black;
 }
 .btn-default:hover {
 	color: black;
 }
 .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
 	color: black;
+	background-color: #3FA9F5;
+}
+.mybtn {
+	letter-spacing: 1.5px;
+	font-size: 1.3em;
+    line-height: 170%;
+	border-radius: 0px;
+	padding: 10px 15px;
 }
 .footer {
 	position: absolute;
@@ -270,6 +275,13 @@ hr.style2 {
 .vcenter h1, h2, h3 {
 	margin-top: 20px;
 }
+.vcenter a {
+	color: inherit;
+}
+.vcenter a p:hover {
+	text-decoration: none;
+}
+	
 .name {
     font-size:3.9em !important;
     text-align:left;
@@ -277,7 +289,7 @@ hr.style2 {
 	font-weight: normal;
 	letter-spacing: 1px;
 	white-space: nowrap;
-    color:white !important;
+    color:black !important;
 	margin: 0;
 }
 
@@ -366,5 +378,5 @@ hr.style2 {
 }
 
 .active {
-	color: white;
+	color: black;
 }
