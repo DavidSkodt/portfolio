@@ -254,6 +254,10 @@ hr.style2 {
 	color: gray;
 	text-align: center;
 }
+.fourinrow {
+	max-height: 500px;
+	margin-top: 0px;
+}
 .reverse {
     unicode-bidi: bidi-override;
     direction: rtl;
