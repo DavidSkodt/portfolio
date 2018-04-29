@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118373746-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-118373746-2');
+		</script>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -64,7 +73,7 @@
 					<div class="col-md-8 col-md-offset-2" style="color: white; margin-bottom: 100px";>
 						<p>I am a huge movie geek, and I always felt like there was something romantic about going to the cinema. That sense of romanticism, however, has been tarnished a bit over the years, as I have grown frustrated with a few of the things I now have come to associate with the movie-going experience: the exceedingly high cost of candy, and a clunky, sub-optimal website experience.</p>
 						
-						<p>In this project, I attempt to use research and intuition to identify real usability issues and pain points on a live, cinema website. This was my very first real design project, so a lot of the techniques and software that I used, I had to teach myself along the way. At the very end of this case study, I reflect upon the most important lessons this project has taught me.
+						<p>In this project, I attempt to use research and proven design theory to identify real usability issues and pain points on a live, cinema website. This was my very first real design project, so a lot of the techniques and software that I used, I had to teach myself along the way. At the very end of this case study, I reflect upon the most important lessons this project has taught me.
 					
 					
 						<p>This case study can be seen as two parts of a whole. In this first part, I evaluate the current website and gather knowledge through research. In the second, I try to tackle the task of redesigning the website.</p>
@@ -84,13 +93,13 @@
 						
 						<p>Nordisk Film Biografer is the largest chain of cinemas in Denmark, and owns 22 different cinemas, spread out across the country. The cinemas receive about 6 million visitors annually, in total. Their website gets about 513.000 views per month. Kino.dk, which is a ticket hub for 49 Danish cinemas, including the cinemas from NFbio.dk, gets about twice as many views. Kino.dk also offers ticket sales to Nordisk Film Biografers showings, but I have no way of knowing which of the two sites sell more tickets on Nordisk Film Biografers behalf.</p>
 						
-						<p>The information I managed to scrape together was scarce and dated. The graph below is from a cultural survey from 2012. It tells me that teens and young adults are the primary movie-goers. I used this knowledge to focus on the younger of two personas.
+						<p>The information I managed to scrape together was scarce and dated. The graph below is from a cultural survey (conducted once every 10 years) from 2012. It tells me that teens and young adults are the primary movie-goers.
 						
 
 						<img class="img-responsive" style="max-height: 80%" src="./images/cinemabyage.png" alt="A graph that shows that young adults go to the cinema more than other age groups">
 
 						
-						<p>I wrote an email to Nordisk Film Biografer, thinking they might be willing to offer me some ethnographic data, and hoping that they could tell me how many of their customers bought or reserved their tickets online. This was not information that they were willing to disclose, unfortunately. </p>
+						<p>Nordiske Film Biografer was not willing to share much when I contacted them either, unfortunately, but I had not expected that they would.</p>
 					</div>
 				</div>
 			</section>
@@ -102,32 +111,9 @@
 						<h3>The Guerilla Test</h3>
 						
 						<p>In order to learn more about how people interacted with the website, I wanted to conduct a usability test. Due to a lack of resources (both in time, manpower and funds), I decided to conduct a <strong>guerrilla test</strong>. This is an alternative to doing a full usability test, which comes with its own pros and cons. The key difference lies in how people are recruited for the test. In a traditional usability study, people are recruited in advance, for long (45 minutes - 1 hour) sessions. This allows for depth and rigor. The guerrilla version takes place in public, where people are recruited for short, on-the-spot sessions.</p>
-					</div>
-				</div>
-						
-				<div class="row justify-content-center" style="margin-bottom: 20px;">
-					<div class="col-xs-12 col-sm-4 col-sm-offset-2" style="">
-						<p><strong>Pros</strong></p>
-						<ul>
-							<li>Less preparation time</li>
-							<li>Less time spent recruiting participants</li>
-							<li>Less money spent on incentives for participants</li>
-						</ul>
-					</div>
-					<div class="col-xs-12 col-sm-4" style="margin-left: auto; margin-right: auto; display: block">
-					<p><strong>Cons</strong></p>
-						<ul>
-							<li>Less control over who participates</li>
-							<li>Less predictable timetable</li>
-							<li>Less time for testing</li>
-						</ul>
-					</div>
-				</div>
-						
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<p>The most important of these points is arguably that you rarely get to test with people who are within resemble your users, but a guerrilla test is rarely the only test that you would do on a larger project. I argue that it serves the role of being a preliminary test, meant to catch broad issues. In my case, however, it stands on its own because of resource constraints.</p>
-						<div style="margin-left: 60px;">
+				
+						<p>The most important difference is arguably that you rarely get to test with people who resemble your users. If time had permitted, I would rather have done a more thorough test for this very reason.</p>
+						<div class="p-indented">
 							<p><strong>Purpose:</strong> The test included just the mobile version of the current (as of date of test) website. The test focused mostly on navigation, as required by the different tasks.</p>
 							<p><strong>Scope:</strong> The purpose of the test was to locate as many possible pain points as possible that may create friction in the flows related to the most common user goals. Secondarily, observing people interact with the current design would give me valuable insights into the user.</p>
 							<p><strong>Length:</strong> 15 minutes, max. Because I approached people during shopping, I knew that even 15 minutes would be stretching it.</p>
@@ -137,15 +123,16 @@
 						<p>In preparation of the test, I wanted to figure out what users wanted to accomplish when visiting the website. I made a survey on social media, asking what people usually went to cinema sites to do.</p>
 						
 						<p>The three goals that were mentioned the most were:</p>
-						<div style="margin-left: 60px;">
+						<div class="p-indented">
 							<p><strong>1:</strong> To see what movies are showing this week.</p>
 							<p><strong>2:</strong> To see the show times on a particular date.</p>
 							<p><strong>3:</strong> To see which movies are coming out in the near future.</p>
 							<p><strong>4:</strong> To order a ticket, knowing already what they want to see and where.</p>
 						</div>
-						<p>I used these three goals as the core focus for my usability test and to limit the scope of my redesign. In order to run a test with these goals, I had to rewrite them into tasks, and then build up scenarios around the task. Note that these scenarios were written and executed in Danish, but that the translated versions below match the phrasing and tone fairly well. I was careful to phrase the scenarios in such a way that the words did not match any navigation elements on the cinema website.</p>
+
+						<p>I used these three goals as the core focus for my usability test and to limit the scope of my redesign. In order to run a test with these goals, I had to rewrite them into tasks, and then build up scenarios around each task. Note that these scenarios were written and executed in Danish, but that the translated versions below match the phrasing and tone fairly well. I was careful to phrase the scenarios in such a way that the words did not match any navigation elements on the cinema website.</p>
 						
-						<div style="margin-left: 60px;">
+						<div class="p-indented">
 							<p><strong>Exploratory task:</strong> This is the website. First, I would like you to look around and tell me your impressions. What do you think is possible on this site? You can scroll up and down, but please stay on this page to begin with.</p>
 							<p><strong>Scenario 1:</strong> You want to go to the movies, but haven’t decided on which movie to watch. You plan to go to the cinema this Sunday night. The closest cinema to you is in the Field’s shopping mall, in Copenhagen.</br>
 							Find out which movies are showing on Sunday (the 10th).</p>
@@ -156,9 +143,10 @@
 						</div>
 						<p>In order to record the sessions, I constructed a DIY “Brundlefly”, as coined by Steve Krug, from a universal phone holder, a webcam and duct tape. <a href="http://community.uxmastery.com/t/i-made-a-cheap-rig-for-recording-phone-usability-tests-in-less-than-30-minutes/4858" target="_blank">Want to see how I made it?</a></p>
 						<img class="img-responsive" style="" src="./images/brundlefly.jpg" alt="A picture of a homemade device for capturing video of people when they use a smartphone.">
-						<p>My initial plan was to conduct the test on moviegoers at the local cinema, but my idea was quickly shot down when I was politely rejected when I proposed the idea to them over the phone. The thought had crossed my mind that they might, but I wasn’t quite prepared for how many places would shut me out when I then called around to the places I had considered as backup locations. Most people were afraid that I would upset their customers, or asked me to pay a fee. I eventually had some luck at the very local grocery store. A grocery store is a sub-optimal choice, because people don't "hang around" at grocery stores. They are there to complete a specific task, and then leave.</p>
+						<h3>Location</h3>
+						<p>My initial idea was to conduct the test on moviegoers at the local cinema, but that didn't pan out. Instead, I convinced a local grocery store to let me hang out in their wine aisle. I had to turn up the charm and work hard to get participants, because people don't "hang around" at grocery stores. They are there to complete a specific task, and then leave.</p>
 						<img class="img-responsive" style="" src="./images/brugsensetup.jpg" alt="A picture of my setup at the local grocery store.">
-						<p>I approached shoppers politely, and asked for their time in return for covering a small amount of their bill on groceries (25 DKK ≈ 4.11 USD). I wrangled 4 participants into participating. I had hoped for at least 5, but the store grew very quiet at 7 pm.</p>
+						<p>In return for their time, I offered to cover a small amount of their grocery bill (25 DKK ≈ 4.11 USD). I wrangled in 4 participants, total. I had hoped for at least 5, but the store grew very quiet after 7 pm as people were at home, preparing or eating dinner.</p>
 					</div>
 				</div>
 			</section>
@@ -168,53 +156,54 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
 						<h1 class="sectionheader">Findings</h1>
-						<p>As I reviewed the footage, I took note of the task completion rates of each of the scenarios mentioned earlier. I coded their performances thusly:
+						<p>As I reviewed the footage, I took note of the task completion rates of each of the scenarios mentioned earlier. I coded their performances like this:
 						
-						<div style="margin-left: 60px;">
-							<p><strong>1:</strong> The participant performed the task without any problems.</p>
+						<div class="p-indented">
+							<p><strong>3:</strong> The participant performed the task without any problems.</p>
 							<p><strong>2:</strong> The participant performed the task with minor difficulties.</p>
-							<p><strong>3:</strong> The participant was unable to perform the task.</p>
+							<p><strong>1:</strong> The participant was unable to perform the task.</p>
 						</div>
+						<p>Each scenario can score up to 12 points (3 points x 4 participants). The closer to 12, the better.</p>
 						
-						<table class="table">
+						<table class="table" style="text-align:center">
 							<thead>
 								<tr>
-									<th>#</th>
-									<th>Scenario 1</th>
-									<th>Scenario 2</th>
-									<th>Scenario 3</th>
+									<th></th>
+									<th>Scenario 1: </br>"Which movies are showing on Sunday?"</th>
+									<th>Scenario 2: </br>"Reserve three tickets for specific movie"</th>
+									<th>Scenario 3: </br>"Which movies are coming out in October?"</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>Participant 1</td>
+									<td>Participant #1</td>
 									<td class="yellow">2</td>
 									<td class="yellow">2</td>
 									<td class="red">1</td>
 								</tr>
 								<tr>
-									<td>Participant 2</td>
+									<td>Participant #2</td>
 									<td class="green">3</td>
 									<td class="yellow">2</td>
 									<td>N/A</td>
 								</tr>
 								<tr>
-									<td>Participant 3</td>
+									<td>Participant #3</td>
 									<td class="green">3</td>
 									<td class="yellow">2</td>
 									<td class="green">3</td>
 								</tr>
 								<tr>
-									<td>Participant 4</td>
+									<td>Participant #4</td>
 									<td class="green">3</td>
 									<td class="green">3</td>
 									<td class="red">1</td>
 								</tr>
-								<tr style="font-weight: bold;">
+								<tr style="font-weight: bold; font-size: 1.6em; border-bottom: 3px solid black; border-top: 3px solid black">
 									<td>Sum</td>
-									<td>11</td>
-									<td>9</td>
-									<td>5</td>
+									<td class="green">11/12</td>
+									<td class="yellow">9/12</td>
+									<td class="red">5/12</td>
 								</tr>
 							</tbody>
 						</table>
@@ -226,33 +215,45 @@
 						<h3>1: Ticket buying progress resets after logging in</h3>
 						<p>After specifying movie, date, time and cinema, if the participant was not logged in beforehand, all progress would be lost.</br>
 						<p>This was the case for all participants. I later checked on several devices and browsers, and the issue persisted.
-						This issue was the most severe because it sets back to square one and doesn’t tell them why. I will strongly argue that this issue has a direct impact on the amount of people who complete the ticketing process.</p>
+						I judged this issue as the most severe because it happens at the very last stage of the process, and then throws users back to start from square one, with no real explanation as to why. I will strongly argue that this issue has a direct impact on the amount of people who complete the ticketing process.</p>
 						<img class="img-responsive" style="max-height: 800px;" src="./images/crashflow.png" alt="A picture of the most prominent issues, on post-its">
-						<p>Edit: This issue has since been fixed.</p>
+						<p>Edit: This issue has since been fixed on their live website.</p>
 						
 						<h3>2: Upcoming movies are hard to locate</h3>
-						<p>The navigation item that takes users to the “upcoming movies”-page difficult to find. One participant searched for 6 minutes and another for 3½ minutes before I stopped them, as I sensed their frustration.</p>
-						<p><em>"I just can't find it"</em>, several of the participants voiced.</p>
-						<p>Having forgotten where the menu item was since originally creating the tasks, I also failed to locate the item, when asked by a participant.</p>
+						<p>The navigation item that takes users to the “upcoming movies”-page is difficult for the participants to find. One participant searched for 6 minutes and another for 3½ minutes before I stopped them, as I sensed their frustration.</p>
+						<blockquote>"I just can't find it"</blockquote>
+						<p>one participant said very plainly, confirming what I had already observed twice before.</p>
+						<p>Funnily enough, I also failed to locate the item when I was asked to reveal where it was after the test by a participant. It was only later, when I went through my notes, that I was able to find it.</p>
 						<p>The page is reached by clicking a very ambiguous item in a drop down menu labeled “select movie”. This drop down is the third consecutive drop down in a column, after “choose cinema” and “choose date”.</p>
-						
-						<img class="img-responsive" style="max-height: 90vh; width: auto;" src="./images/Issue_UpcomingMovies.png" alt="A picture of the most prominent issues, on post-its">
-						
-						<p>Seeing as the act of checking future releases turned out to be in the top 3 of reported goals in the preliminary research, this needs to be much easier to locate. </p>
+						<p>I asked the single participant that had found it without issue, how she had done it. It turns out, she had taken note of the item during a previous task, and remembered it.</p>
+						<p>Seeing as the act of checking future releases turned out to be in the top 3 of reported goals in the preliminary research, this needs to be <strong>much</strong> easier to locate. </p>
 						<p>A fast and cheap solution to this would be to relocate the menu item, perhaps as one of the tabs at the top of the site.</p>
-						
-						<img class="img-responsive" style="max-height: 800px; margin-left: auto; margin-right: auto;" src="./images/upcomingmockup.png" alt="A mockup of a possible solution to the issue of the page named upcoming movies being overlooked.">
-						
-						<p>If resources are not an issue, the best placement could be determined with an open card sort. This would also likely lead to more intuitive information architecture, overall.</p>
+						<h3 style="text-align: center;">Problem</h3>
+						<img class="img-responsive" style="max-height: 90vh; width: auto; margin-top: 30px;" src="./images/Issue_UpcomingMovies.jpg" alt="A picture of the most prominent issues, on post-its">
+							<ul>
+								<li>A high level menu item is hidden away under a dropdown menu</li>
+								<li>The menu item is not very visually distinct from the rest of the items on the list</li>
+								<li>The menu item is grouped with movies, not other menu items</li>
+							</ul>
+						<h3 style="text-align: center;">Solution</h3>
+						<img class="img-responsive" style="max-height: 800px; margin-left: auto; margin-right: auto; margin-top: -30px;" src="./images/upcomingmockup.png" alt="A mockup of a possible solution to the issue of the page named upcoming movies being overlooked.">
+							<ul>
+								<li>Group "upcoming movies" with "events" and put them under a tab called "upcoming", replacing "events"</li>
+								<li>The grouping seems more intuitive</li>
+								<li>Participants would consistently browse the tabs when searching</li>
+							</ul>
+						<p>If resources are not an issue, the best solution could be determined with an open card sort. This would also likely lead to more intuitive information architecture, overall.</p>
 						
 						
 						<h3>3: The “buy / reserve” dialogue box is ambiguous.</h3>
-						<p>After selecting a movie, you are prompted then to select a show time. When clicking a time, a dialogue box appears. This box, with it’s “buy / reserve” button was frequently a point where participants would hesitate.</p>
-						<p>Participants would scroll up or down, as if they had missed something. In other words, they are uncertain if this is the step they should be taking next. That might be because there is a lot going on, and the design does very little to lead them.</p>
-						<p>If they just selected the movie, a dialogue appears and the background darkens. Good, they know that they have to focus on what is in the foreground. But this dialogue is very convoluted, and the show times are not visible until you scroll down. There are 5 different red square buttons screaming for attention, none of which are actually the button that takes them to the next step in the process. If they scroll down, they see the movie show times for every cinema that shows this movie (unless they specified the cinema) which can be as many as all of them (23).</p>
-						<img class="img-responsive" style="max-height: 150vh; width: auto;" src="./images/longoversight.png" alt="A mockup of a possible solution to the issue of the page named upcoming movies being overlooked.">
-						<p>Clicking one of these times makes another dialogue appear, with another small red square button that says “reserve/buy”. The dialogue is about 1/9th the size of the screen, and the same background color and hue as the background behind it. </p>
-						<p>A fast and cheap solve for this is to make the second dialogue much larger and more prominent, so that it takes up more space and appears more important as well as making the button to progress visually distinguished from the rest.</p>
+						<p>After selecting a movie, a panel about the movie expands (vertically) and elements outside of the panel darken. Good, this draws focus to the foreground elements. Unfortunately, it goes downhill from here. To buy or reserve a ticket, the next step is to select a show time, but the panel is very convoluted, and the show times are not visible until you scroll down. There are 5 different red rectangular buttons screaming for attention, none of which are actually the button that takes them to the next step in the process. If they scroll down, they eventually see the movie show times for <strong>every cinema</strong> that shows this movie, which can be as many as all 23 of them.</p>
+						<p>When clicking a time, a dialogue box appears with a single button that says: “buy / reserve”. The dialogue is about 1/9th the size of the screen, and the same background color and hue as the elements behind it.</p>
+						<p>This entire panel is an issue. Participants scrolled up or down, uncertain if this was the step they should be taking next. There is too much going on, and the design does very little to lead them.</p>
+						
+						<img class="img-responsive" style="max-height: 1500px;" src="./images/Issue_buyreservedialogue.jpg" alt="A mockup of a possible solution to the issue of the page named upcoming movies being overlooked.">
+						
+						<p>A fast and cheap solve for this is to reduce the amount of buttons and possible actions in the panel, or even to make the second dialogue much larger and more prominent.</p>
+						
 					</div>
 				</div>
 			</section>
@@ -263,9 +264,10 @@
 					<div class="col-lg-4 col-lg-offset-2">
 						<h3 style="text-align: center">Problem</h3>
 						
-						<img class="img-responsive" style="margin-top: -20px; max-height: 95vh;" src="./images/popup modified mockup.png" alt="A mockup of a possible solution to the issue of the page named upcoming movies being overlooked.">
+						<img class="img-responsive" style="margin-top: -30px; max-height: 95vh;" src="./images/popup modified mockup.png" alt="A mockup of a possible solution to the issue of the page named upcoming movies being overlooked.">
 						<div class="splitlist">
 							<ul>
+								<li>There are too many buttons and too much information</li>
 								<li>Popup gets easily missed</li>
 								<li>Buy and reserve are not explained here, nor later in the flow</li>
 								<li>The selected time slot is very subtle</li>
@@ -273,11 +275,12 @@
 						</div>
 					</div>
 					<div class="col-lg-4">
-						<h3 style="text-align: center">Solution</h3>
+						<h3 style="text-align: center;">Solution</h3>
 						
-						<img class="img-responsive" style="margin-top: -20px; max-height: 95vh;" src="./images/popup solution mockup.png" alt="A mockup of a possible solution to the issue of people missing the buy / reserve modal">
+						<img class="img-responsive" style="margin-top: -30px; max-height: 95vh;" src="./images/popup solution mockup.png" alt="A mockup of a possible solution to the issue of people missing the buy / reserve modal">
 						<div class="splitlist">
 							<ul>
+								<li>Reduce the amount of information and actions possible</li>
 								<li>Make the pop-up dialog much larger</li>
 								<li>Explain right there and then what reserve and buy do different</li>
 								<li>Make the visual cue for selected time slot much clearer, potentially with depth</li>
@@ -291,14 +294,14 @@
 			<section class="content">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">		
-						<p>The better solution would be to restructure the first dialogue box, so that the show times are immediately visible, and generally strive for better visual cues.</p>
+						<p>The better solution would be to restructure the panel, so that the show times are immediately visible, and generally strive for a better visual hierarchy.</p>
 
 						<h3>4: The “cinemas” tab confused some participants</h3>
 						<p>I observed a few instances where the participants would choose to press the “cinemas” tab, instead of using the drop-down menus on the “tickets” tab. </p>
 						<p>People would then stay here for a little while, scrolling up and down, not quite sure how to progress.</p>
-						<p>This tab has a lot of things fighting for attention. Six menu items, some of which are redundant, three unlinked movie posters, and a carousel that advertises the upcoming events for this particular cinema are the first things to catch the eye. “Program” is among the menu items, and there is also a separate “see program” button visible under the headline: “Program”, immediately following the menu.  </p>
+						<p>There are six menu items (some of which are redundant), three unrelated movie posters, and a carousel that advertises the upcoming events for this particular cinema. “Program” is among the menu items, and there is also a separate “see program” button visible under the headline: “Program”, immediately following the menu.  </p>
 						<p>So if they are so plainly visible, why do people not see them?</p>
-						<p>What the participant expected was to see the program for the cinema, front and center. They scan the page, hoping to see images of movie posters that they can click on, or another dropdown menu for movie selection.</p>
+						<p>What the participant expected was to see the program for the cinema, front and center. They scan the page, hoping to see images of movie posters that they can click on, or another dropdown menu for movie selection. The problem is made worse by, again, poor visual cues. White text on red is a button, but only sometimes. An indistinguishable interaction pattern makes scanning very hard.</p>
 						<p>The quick fix here is to simply put the program as the main item of the submenu.</p>
 					</div>
 				</div>
@@ -310,7 +313,7 @@
 					<div class="col-lg-4 col-lg-offset-2">
 						<h3 style="text-align: center">Problem</h3>
 						
-						<img class="img-responsive" style="margin-top: -20px; max-height: 95vh;" src="./images/biograf tab mockup.png" alt="A mockup of a possible solution to the issue of the page named upcoming movies being overlooked.">
+						<img class="img-responsive" style="margin-top: -30px; max-height: 95vh;" src="./images/biograf tab mockup.png" alt="A mockup of a possible solution to the issue of the page named upcoming movies being overlooked.">
 						<div class="splitlist">
 							<ul>
 								<li>The participant is trying to find a movie, and expects the movie selection to be appear after selecting the right cinema</li>
@@ -321,7 +324,7 @@
 					<div class="col-lg-4">
 						<h3 style="text-align: center">Solution</h3>
 						
-						<img class="img-responsive" style="margin-top: -20px; max-height: 95vh;" src="./images/biograf tab solution mockup.png" alt="A mockup of a possible solution to the issue of people missing the buy / reserve modal">
+						<img class="img-responsive" style="margin-top: -30px; max-height: 95vh;" src="./images/biograf tab solution mockup.png" alt="A mockup of a possible solution to the issue of people missing the buy / reserve modal">
 						<div class="splitlist">
 							<ul>
 								<li>Switch the first and second menu items</li>
@@ -336,7 +339,7 @@
 			<section class="content">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">	
-						<p>The better solution would be to distinguish the buttons with clearer signifiers, so that users immediately identify their options on this page.</p>
+						<p>The better solution would be to distinguish the buttons with clearer signifiers, so that users immediately identify their options when landing on a new page.</p>
 						
 						<h3>5: Pressing “next week” when browsing by date only moves the view three days at the time</h3>
 						<p>This is quite a small issue, and likely stems from the fact that the website hasn’t been developed mobile-first.</p>
@@ -352,12 +355,13 @@
 						<p>This happened only once during the test, which is why I deemed it low priority. </p>
 						
 						<h3>In conclusion...</h3>
-						<p>Based on working with the website, I feel like a lot of their issues boil down to three things.</p>
-						<ul>
-							<li>Confusing page structure</li>
-							<li>Indistinguishable buttons</li>
-							<li>Poor navigation elements</li>
-						</ul>
+						<p>Based on working with the website, I feel like a lot of their issues boil down to</p>
+						<div class="p-indented">
+							<p><strong>Visual clutter</strong>: on many pages, it is simply the case of the website trying to cram everything onto a page. The current state of the visual hierarchy makes it very difficult to scan each page, and CTAs get lost in the mess.</p>
+							<p><strong>Indistinguishable actions:</strong> in way too many cases, actionable items would be indistinguishable from the rest of the page. Furthermore, there is a distinct lack of consistency. With only vague distinction between static elements and actionable items, it is difficult for users to even know what can be pressed and what can't.</p>
+							<p><strong>Too many buttons!:</strong> seriously.
+							<p><strong>Confusing IA:</strong> the structure of the website, even after working with it for months, still confuses me. There is the distinct feeling of being lost when navigating, and no sense of ones progress when going through the steps of purchasing a ticket.</p>
+						</div>
 						<p>I have provided possible solutions based on the problems that the usability test revealed. This guerrilla test would be an excellent precursor to more extensive testing of the current website, but that isn't within the scope of my project. Instead, armed with new-found knowledge, I decided to try my hands at redesigning the website.</p>
 
 
@@ -419,7 +423,7 @@
 						<p>On the original website, the "next step" when ordering tickets was hard to find. You had to scroll down (and back up, as observed in most cases, during scenario 2 of the test) to find the right button. For that reason, I decided to make the screens in the ticket flow fixed in size, and place the "next" button near the bottom of the screen fairly consistently. The exception to this is when the user has to choose between "reserve" and "buy", because I wanted there to be visual distinction, to hint to the user that there was a choice to be considered.</p>
 						<p>The decision to make "choose cinema" a modal of its own, and not simply a dropdown, was a difficult one. My first arguement for the modal over a dropdown is certainty. The dropdown would have had to contain 21 cinemas, browsable by name, city or both. There would not be space for more than that. I forsee use-cases in which users do not know the name of the cinema closest to them, which is where the location pin and adresse comes in handy. By clicking the pin next to a cinema adresse they were unsure of, an embedded Google Maps widget shows them the location of the cinema. Click that, and it takes them to Google Maps, for further investigation. The second arguement for the modal is because I wanted to give the option to pick your favorite cinema, so that on next visit, it is already selected for you. Is that a good idea? Not sure! It is based on two assumptions that should be tested on next iteration:</p>
 
-						<div style="margin-left: 60px;">
+						<div class="p-indented">
 							<p><strong>1:</strong> Most visitors to the site already know in which geographical area they want to go to the cinema</p>
 							<p><strong>2:</strong> In most instances, on a return visit to the site, people go to the same cinema that they did the first time</p>
 						</div>
@@ -450,6 +454,11 @@
 						<p>I had planned for the project to take two months, including writing this case study and making this website. Haha! Yea, I was a little off. The entire thing took 5 months in total, which made me feel ashamed, at first. But instead, let's turn that into a valuable lesson about planning, shall we?</p>
 						<p>I think I could have been more realistic in planning the project if I had spent more time planning each stage, instead of just defining them and then diving head-first into it. Part of the reason it took so long was because I had to learn every step along the way, from testing to coding HTML & CSS. Having now gone through every stage, I feel like I have a much better understanding of what goes into developing a product or service, from research to development.</p>
 						<p>If this project has taught me two lesson, it's <strong>to take smaller bites.</strong> and <strong>be less thorough.</strong> If I had moved faster with less regard for my own assumptions of "correctness" when it came to designing the structure of the redesign, I would have been able to iterate more effectively and thus, improve the design.</p>
+						<h3>Persona</h3>
+						<p>I had intended to work with a persona, and I went through the steps of creating a proto persona from the very limited data that I had managed to gather. The guerilla tests largest weakness is that it doesn't really allow for you to handpick your participants. My proto persona ended up being too vague due to a lack of data on the largest demographic (15-29 years of age), so I ommited it from the case study.</p>
+						<p> I now have a much better understanding of how to create personas, and the amount of work and data that goes into making them useful and truthful.</p>
+						<h3>Test location</h3>
+						<p>When I conducted my test, I did so in a grocery store. When people enter a grocery store, they usually have a very specific reason to be there, and they don't wish to be there longer than it takes them to finish shopping. That makes a grocery store a pretty bad place to try and coax people into giving you their time. Malls and coffee shops make much better testing locations.</p>
 						<h3>Tools</h3>
 						<p>I found that I really enjoyed working with Figma. The intuitive UI, the ability to seamlessly collaborate on the same project and the fact that it can be used in a browser, making it independent of OS are just some of the things that will make me interested in working in Figma again.</p>
 						<p>Though Figma is amazing tool that makes it simple to share prototypes, the animations that they allow are fairly rudamentary. I wasn't able to make the main tab views scrollable, and I wish that it was possible to animate interactions that weren't transitions.</p>
