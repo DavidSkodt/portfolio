@@ -198,8 +198,11 @@ hr.style2 {
 	float: right;
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
+	margin-bottom: 20px;
 }
-
+.nav-pills {
+	margin-top: 0px;
+}
 .nav-pills a{
 	color: black;
 }
@@ -308,7 +311,7 @@ hr.style2 {
 	margin-bottom: 20px;
 }
 .name {
-    font-size:3.9em !important;
+    font-size:3.0em !important;
     text-align:left;
     font-family: "Libre Baskerville", serif;
 	font-weight: normal;
