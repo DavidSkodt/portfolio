@@ -202,8 +202,6 @@ hr.style2 {
 .nav-pills {
 	margin-top: 0px;
 	white-space: nowrap;
-	padding-top: 5px;
-	padding-bottom: 5px;
 }
 .nav-pills li{
 	display: inline-block;
@@ -228,6 +226,23 @@ hr.style2 {
 	color: black;
 	text-decoration: underline;
 	text-decoration-color: black;
+}
+.nav-stacked {
+	min-width: 60%; 
+	margin: 5px; 
+	color: white; 
+	position: static; 
+	bottom: 0; 
+	right: 0; 
+	padding-top: 1px; 
+	padding bottom: 1px;
+}
+.nav-container {
+	position: static; 
+	right: 0; 
+	z-index: 1; 
+	padding-bottom: 5px; 
+	padding-top: 5px;
 }
 .btn-default {
 	background-color: rgba(0, 0, 0, 0);
