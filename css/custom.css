@@ -61,7 +61,7 @@ a:hover {
 #topbar {
 	height: 20%; 
 	margin: 0; 
-	padding: 15px;
+	padding: 8px;
 	background-color: white;
 }
 #map {
@@ -198,10 +198,14 @@ hr.style2 {
 	float: right;
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
-	margin-bottom: 20px;
 }
 .nav-pills {
 	margin-top: 0px;
+	white-space: nowrap;
+}
+.nav-pills li{
+	display: inline-block;
+	margin-bottom: 0px;
 }
 .nav-pills a{
 	color: black;
@@ -311,7 +315,7 @@ hr.style2 {
 	margin-bottom: 20px;
 }
 .name {
-    font-size:3.0em !important;
+    font-size:3.1em !important;
     text-align:left;
     font-family: "Libre Baskerville", serif;
 	font-weight: normal;
@@ -359,6 +363,14 @@ th, td {
 	font-size: 1.0em;
 }
 
+
+}
+@media (min-width:768px)
+{
+	#md-float-fix{ 
+		float: right !important;
+	}
+}
 @media (max-width:768px)
 {
 	#md-float-fix{ 
@@ -372,17 +384,6 @@ th, td {
 		text-align: center;
 		margin-top: 7px;
 	}
-}
-
-}
-@media (min-width:768px)
-{
-	#md-float-fix{ 
-		float: right !important;
-	}
-}
-@media (max-width:768px)
-{
 	.splitlist {
 		max-width: 70%;
 	}
