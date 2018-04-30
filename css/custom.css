@@ -10,6 +10,7 @@ h1{
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 	margin-bottom: 20px;
+	font-size: 4em;
 }
 h2{
 	font-family: 'Roboto', sans-serif;
@@ -20,7 +21,7 @@ h3{
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 	margin-bottom: 20px;
-	margin-top: 75px;
+	margin-top: 40px;
 }
 .flex-center-vertically h3{
 	margin-top: 0px;
@@ -430,6 +431,9 @@ th, td {
 	}
 	.p-indented {
 		margin-left: 20px;
+	}
+	h1 {
+		font-size: 3em;
 	}
 }
 @media (min-width:500px) {
