@@ -202,6 +202,8 @@ hr.style2 {
 .nav-pills {
 	margin-top: 0px;
 	white-space: nowrap;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 .nav-pills li{
 	display: inline-block;
@@ -215,7 +217,7 @@ hr.style2 {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin-top: 5px;
+
 }
 .nav > li > a:hover, .nav > li > a:focus {
 	background-color: rgba(0, 0, 0, 0);
@@ -323,6 +325,8 @@ hr.style2 {
 	white-space: nowrap;
     color:black !important;
 	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .splitlist {
@@ -423,12 +427,6 @@ th, td {
 	}
 }
 
-@media (max-width:992px)
-{
-	.navbar-nav {
-		margin-top: 5px;
-	}
-}
 
 @media (min-width:992px)
 {
