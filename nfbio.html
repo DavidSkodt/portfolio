@@ -20,6 +20,8 @@
 		<script type="text/javascript" src="js/tether.js" async></script>
 		<script type="text/javascript" src="js/bootstrap.js" async></script>
 		<script type="text/javascript" src="js/modal.js" async></script>
+		<script src="js/jquery-easing/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/smooth-scroll.js" async></script>
 		<title>David UX</title>
 		<link rel="icon" href="./images/pencil.ico">
 	</head>
@@ -211,7 +213,7 @@
 						<p>Even with so few tasks and participants, this served as a good indicator of where to put most of my focus. Using this table as an outset, I arranged the issues that I observed on a priority list, going from high to low priority. Priority is based on how serious the issue is for the user experience, and for the bottom line of the Nordisk Film Biografer.</p>
 						
 						<img class="img-responsive" style="width: auto; max-height: 90vh;" src="./images/ranked.jpg" alt="A picture of the most prominent issues, on post-its">
-
+						<p>This is where the case study gets into the nitty-gritty, explaining all of the issues I found relevant and how to solve them. It is the longest section, so I fully expect you to skim it over. If you want to skip straight to the next bit, <a class="js-scroll-trigger" href="#conclusion">click here.</a></p>
 						<h3>1: Ticket buying progress resets after logging in</h3>
 						<p>After specifying movie, date, time and cinema, if the participant was not logged in beforehand, all progress would be lost.</br>
 						<p>This was the case for all participants. I later checked on several devices and browsers, and the issue persisted.
@@ -354,7 +356,7 @@
 						<p>When you click a show time twice, the “buy/reserve” dialogue will disappear, and pressing the desired time again will not make it reappear. For it to reappear, you have to click another time first, and then the intended one, or reload the page.</p>
 						<p>This happened only once during the test, which is why I deemed it low priority. </p>
 						
-						<h3>In conclusion...</h3>
+						<h3 id="conclusion">In conclusion...</h3>
 						<p>Based on working with the website, I feel like a lot of their issues boil down to</p>
 						<div class="p-indented">
 							<p><strong>Visual clutter</strong>: on many pages, it is simply the case of the website trying to cram everything onto a page. The current state of the visual hierarchy makes it very difficult to scan each page, and CTAs get lost in the mess.</p>
