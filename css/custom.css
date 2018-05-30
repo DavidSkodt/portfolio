@@ -122,6 +122,8 @@ a:hover {
 .container {
 	margin: 0 auto; 
 	width: 100%;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 
@@ -387,6 +389,20 @@ th, td {
 	margin-bottom: 50px;
 	font-size: 1.0em;
 }
+.wrapimage {
+  float: left;
+  width: 250px;
+  shape-outside: url(./images/hikepic.jpg);
+  shape-margin:20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.wrapper {
+  column-count: 1;
+  column-gap: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
 
 }
@@ -440,6 +456,16 @@ th, td {
 	h1 {
 		font-size: 3em;
 	}
+	.wrapimage {
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto; 
+	}
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 @media (min-width:500px) {
 
@@ -457,7 +483,9 @@ th, td {
 	.navbar  { /*Changes the letter spacing on the menu items so they don't start stacking*/
 		letter-spacing: 5px;
 	}
+	
 }
+	
 @media (min-width: 1200px) {
 	.splitlist {
 		display: inline;
