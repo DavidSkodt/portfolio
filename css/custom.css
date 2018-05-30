@@ -226,7 +226,7 @@ hr.style2 {
 	background-color: white;
 	color: black;
 	text-decoration: underline;
-	text-decoration-color: black;
+	text-decoration-color: #3FA9F5;
 }
 .nav-stacked {
 	min-width: 60%; 
@@ -335,9 +335,9 @@ hr.style2 {
 .name {
     font-size:3.1em !important;
     text-align:left;
-    font-family: "Libre Baskerville", serif;
-	font-weight: normal;
-	letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	letter-spacing: 2px;
 	white-space: nowrap;
     color:black !important;
 	margin: 0;
