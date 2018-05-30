@@ -227,6 +227,7 @@ hr.style2 {
 	color: black;
 	text-decoration: underline;
 	text-decoration-color: #3FA9F5;
+	font-weight: bold;
 }
 .nav-stacked {
 	min-width: 60%; 
@@ -252,13 +253,15 @@ hr.style2 {
 	border-width: 1px;
 	color: black;
 	font-size: 1.1em;
+	
 }
 .btn-default:hover {
 	color: black;
 }
 .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
 	color: white;
-	background-color: black;
+	background-color: #3FA9F5;
+	font-weight: bold;
 }
 .mybtn {
 	letter-spacing: 1.5px;
@@ -331,6 +334,8 @@ hr.style2 {
 .thumbnail {
 	margin-top: 20px;
 	margin-bottom: 20px;
+	border: 0px;
+	
 }
 .name {
     font-size:3.1em !important;
@@ -459,6 +464,4 @@ th, td {
 	}
 }
 
-.active {
-	color: black;
-}
+
