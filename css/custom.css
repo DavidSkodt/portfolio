@@ -79,8 +79,6 @@ a:hover {
 }
 
 .customhover{
-	position: relative;
-	display: inline-block;
 	border-radius: 5px;
 	border-radius: 5px;
 	-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -400,9 +398,8 @@ th, td {
   float: left;
   width: 250px;
   shape-outside: url(./images/hikepic.jpg);
-  shape-margin:20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  shape-margin:40px;
+  margin-right: 40px;
 }
 .wrapper {
   column-count: 1;
@@ -466,6 +463,7 @@ th, td {
 		display: block;
 		margin-left: auto;
 		margin-right: auto; 
+		margin-bottom: 40px;
 	}
 	.container {
 		padding-left: 20px;
@@ -473,10 +471,6 @@ th, td {
 	}
 }
 @media (min-width:500px) {
-
-	li {
-		
-	}
 	.p-indented	 {
 		margin-left: 60px;
 	}
