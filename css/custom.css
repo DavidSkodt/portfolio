@@ -72,9 +72,7 @@ a:hover {
 }
 
 #contactmethods {
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	white-space: nowrap;
 	display: table;
 }
@@ -241,7 +239,7 @@ hr.style2 {
 }
 .btn-default {
 	background-color: rgba(0, 0, 0, 0);
-	border-style: dashed;
+	border-style: none;
 	border-color: black;
 	border-width: 1px;
 	color: black;
@@ -271,6 +269,10 @@ hr.style2 {
     box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
 }
 
+.btn-default:active:hover, .btn-default.active:hover{
+	background-color: white;
+}
+
 .mybtn {
 	letter-spacing: 1.5px;
 	font-size: 1.3em;
@@ -278,6 +280,7 @@ hr.style2 {
 	border-radius: 0px;
 	padding: 10px 15px;
 }
+
 .footer {
 	position: absolute;
 	width: 100%;
@@ -446,6 +449,10 @@ th, td {
 	.spacer {
 		margin-top: 18px;
 	}
+	#herotext {
+		text-align: center;
+	}
+
 }
 @media (max-width:500px) {
 	.splitlist {
@@ -459,6 +466,7 @@ th, td {
 	}
 	h1 {
 		font-size: 3em;
+		text-align: center;
 	}
 	.wrapimage {
 		float: none;
@@ -471,11 +479,13 @@ th, td {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+
 }
 @media (min-width:500px) {
 	.p-indented	 {
 		margin-left: 60px;
 	}
+	
 }
 
 
